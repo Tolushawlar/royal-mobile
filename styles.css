@@ -23,7 +23,11 @@ a {
 .header{
     /*border-bottom: 1px solid #E2E8F0;*/
     padding: 5px;
-    background-image: linear-gradient(to right, #5a3f37, #2c7744);
+    background-image: url('images/backgrounds/back1.jpeg');
+    object-fit: cover;
+    background-size: 1350px;
+    border-bottom: 3px solid black;
+    background-repeat: no-repeat;
 
 }
 
@@ -102,17 +106,25 @@ a {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 120px;
+    margin: 2px;
+    z-index: 10000;
 }
 
+.nav-item .icons .sociaIcon img{
+    height: 40px;
+    width: 40px;
+    z-index: -990;
+}
 
 .ring{
-    border: 2px solid red;
+    border: 2px solid cyan;
+    box-shadow: 2px 2px cyan;
     border-radius: 35px;
     box-sizing: border-box;
     padding: 7px;
-    width: 200px;
+    width: 240px;
 }
 
 
@@ -171,16 +183,23 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-transform: capitalize;
     padding: 10px;;
 }
 .overlay p{
     margin-bottom: 30px;
 }
+.overBtn {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
 
-.overBtn{
+.overBtn .btn1{
     border: 2px solid grey;
-    width: 400px;
+    width: 200px;
+    margin-left: 20px;
     font-size: 16px;
     padding: 20px;
     padding-bottom: 14px;
@@ -192,6 +211,193 @@ a {
     cursor: pointer;
 }
 
+.overBtn .btn2{
+    border: 2px solid rgb(95, 111, 199);
+    width: 200px;
+    margin-left: 20px;
+    font-size: 16px;
+    padding: 20px;
+    padding-bottom: 14px;
+    border-radius: 25px;
+    text-align: center;
+    height: 50px;
+    margin-top: 65px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.royalWrap{
+    background-image: url('images/backgrounds/back4.jpeg');
+    background-size:100vw;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border-top: 2px solid black;
+    font-family: "Play",sans-serif;
+    
+}
+
+.royalInfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding:50px;
+    justify-content: space-between;
+}
+
+.royalInfo .royalLeft{
+    width: 800px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 16px;
+    padding: 25px;
+    font-weight: bolder;
+}
+
+.royalInfo .royalRight{
+    width: 500px;
+    border-radius: 50%;
+}
+
+.royalInfo .royalRight video{
+    border-radius: 75px;
+    width: 400px;
+    height: 400px;
+}
+
+.about{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding:50px;
+}
+
+.about .aboutLeft{
+    display: flex;
+    flex-direction: column;
+    line-height: 25px;
+    text-align: center;
+    
+}
+
+.about .aboutRight{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 700px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.about .aboutRight .frames{
+    background-image: url('images/iconRing2.png');
+    background-size: 150px;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+}
+
+
+
+
+.blurred {
+  background-image: url('images/backgrounds/back1.jpeg');
+  object-fit: cover;
+    background-attachemnt: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+  }
+  
+  .glass {
+    position: relative;
+    background: inherit;
+    overflow: hidden;
+    width: 50%;
+    height: 50%;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 
+                0 6px 20px rgba(0, 0, 0, 0.15);
+    z-index: 1;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .glass:before {
+    content: '';
+    position: absolute;
+    background: inherit;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: -20px;
+    box-shadow: inset 0 0 500px rgba(255, 255, 255, .4); 
+    filter: blur(10px);
+    z-index: -1;
+  }
+
+
+.features{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-image: url('images/backgrounds/back4.jpeg');
+    background-size:100vw;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border-top: 2px solid black;
+    font-family: "Play",sans-serif;
+}
+
+.featureCat{
+    display: flex;
+    flex-direction: column;
+    margin:10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.featureCat1, .featureCat2{
+    display: flex;
+    flex-direction: row;
+    margin:20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.cat{
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    padding: 10px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cat img{
+    width: 230px;
+    height: 230px;
+}
+
+
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
@@ -201,7 +407,9 @@ a {
 
 
 .slider {
-  background-color: rgb(85, 87, 87);
+    background: url('images/backgrounds/back3.jpeg') no-repeat;
+    background-attachemnt: fixed;
+    background-size: cover;
   height: 800px;
   position: relative;
   overflow: hidden;
@@ -437,6 +645,13 @@ a {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
+    background-image: url('images/backgrounds/back1.jpeg');
+    object-fit: cover;
+    background-size: 1350px;
+    border-bottom: 3px solid black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
 }
 
 .footerLeft{
@@ -499,18 +714,35 @@ a {
   .roadmap {
     background-color: #474e5d;
     font-family: Helvetica, sans-serif;
-    background: url(https://www.w3schools.com/css/lights600x400.jpg);
+    background: url('images/backgrounds/back4.jpeg');
     color: white;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-color: #999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
   }
   
+  .roadmap .roadmapTitle{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      line-height: 15px;
+  }
+
+  .roadmap .roadmapCon{
+      margin: 40px;
+  }
   /* The actual timeline (the vertical ruler) */
   
   .timeline {
     position: relative;
+    width: 800px;
     max-width: 1200px;
     margin: 0 auto;
   

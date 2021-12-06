@@ -70,12 +70,10 @@ a {
 }
 
 .nav-link{
-    font-size: 1.6rem;
-    font-weight: 400;
+    font-size: 16px;
+    font-weight: 600;
     color: white;
     font-family: "Tomorrow",sans-serif;
-    font-size: 14px;
-    font-weight: 500;
     text-transform: capitalize;
     z-index: 9999;
 
@@ -90,6 +88,33 @@ a {
     font-weight: 500;
     color: #482ff7;
 }
+
+.icons{
+    display: flex;
+    flex-direction: row;
+}
+.nav-item .icons .sociaIcon{
+    background-image: url('images/iconRing.png');
+    background-size: 50px;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+}
+
+
+.ring{
+    border: 2px solid red;
+    border-radius: 35px;
+    box-sizing: border-box;
+    padding: 7px;
+    width: 200px;
+}
+
 
 .hero{
     display: flex;
@@ -123,12 +148,12 @@ a {
     transform: translateX(-50%) translateY(-50%);
   }
   
-  .vidSec .container {
+.vidSec .container {
     position: relative;
     z-index: 2;
   }
   
-  .vidSec .overlay {
+.vidSec .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -138,7 +163,34 @@ a {
     opacity: 0.5;
     z-index: 99999;
     color: red;
-  }
+    color: #fff;
+    font-family: "Play",sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-transform: capitalize;
+    padding: 10px;;
+}
+.overlay p{
+    margin-bottom: 30px;
+}
+
+.overBtn{
+    border: 2px solid grey;
+    width: 400px;
+    font-size: 16px;
+    padding: 20px;
+    padding-bottom: 14px;
+    border-radius: 25px;
+    text-align: center;
+    height: 50px;
+    margin-top: 65px;
+    align-items: center;
+    cursor: pointer;
+}
 
 
   @import url(https://fonts.googleapis.com/css?family=Roboto:400,500);
@@ -150,7 +202,7 @@ a {
 
 .slider {
   background-color: rgb(85, 87, 87);
-  height: 500px;
+  height: 800px;
   position: relative;
   overflow: hidden;
   display: -webkit-box;
@@ -201,11 +253,14 @@ a {
 .slider__nav:checked:nth-of-type(4) ~ .slider__inner {
   left: -300%;
 }
+.slider__nav:checked:nth-of-type(5) ~ .slider__inner {
+    left: -400%;
+  }
 .slider__inner {
   position: absolute;
   top: 0;
   left: 0;
-  width: 400%;
+  width: 500%;
   height: 100%;
   -webkit-transition: left 0.4s;
   transition: left 0.4s;
@@ -217,8 +272,10 @@ a {
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
 }
+
 .slider__contents {
   height: 100%;
+  margin-bottom: 50px;
   padding: 2rem;
   text-align: center;
   display: -webkit-box;
@@ -241,9 +298,38 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.slider__image {
-  font-size: 2.7rem;
-      color: #2196F3;
+
+.slider__contents{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.slider__contents:nth-child(2),.slider__contents:nth-child(4) {
+    display: flex;
+    flex-direction: row;
+}
+
+.slider__contents:nth-child(2) .sliderLeft{
+    width: 400px;
+
+}
+
+.slider__contents:nth-child(2) .sliderRight{
+    width: 800px;
+
+}
+
+
+.slider__contents .sliderLeft{
+    width: 400px;
+}
+
+.slider__contents .sliderRight{
+    width: 600px;
+}
+.slider__contents img {
+  width: 500px;
+  height: 500px;
 }
 .slider__caption {
   font-weight: 500;
@@ -256,6 +342,164 @@ a {
   margin-bottom: 3rem;
   max-width: 300px;
 }
+
+.slider__contents .slider__skills{
+    display:flex;
+    flex-direction: column;
+    
+}
+
+.slider__skills .active{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.slider__skills .active .activeInner{
+    display:flex;
+    flex-direction: row;
+}
+
+.slider__skills .passive{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.slider__skills .passive .passiveInner{
+    display:flex;
+    flex-direction: row;
+}
+
+
+.skills{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.counter .container {
+    color: #333;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .counter h1 {
+    font-weight: normal;
+    letter-spacing: .125rem;
+    text-transform: uppercase;
+  }
+  
+  .counter li {
+    display: inline-block;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+  }
+  
+  .counter li span {
+    display: block;
+    font-size: 4.5rem;
+  }
+  
+  .counter .emoji {
+    display: none;
+    padding: 1rem;
+  }
+  
+  .counter .emoji span {
+    font-size: 4rem;
+    padding: 0 .5rem;
+  }
+  
+  
+  @media all and (max-width: 768px) {
+    h1 {
+      font-size: calc(1.5rem * var(--smaller));
+    }
+    
+    li {
+      font-size: calc(1.125rem * var(--smaller));
+    }
+    
+    li span {
+      font-size: calc(3.375rem * var(--smaller));
+    }
+  }
+
+
+
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.footerLeft{
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    text-align: center;
+    line-height: 15px;
+}
+
+.footerLeft img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.footerLeft{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.footerCenter{
+    display: flex;
+    flex-direction: row;
+}
+
+.footerCenter .sociaIcon{
+    background-image: url('images/iconRing.png');
+    background-size: 50px;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+}
+
+
+.footerRight{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footerRight span{
+    margin-top: 10px;
+    width: 100px;
+    padding: 10px;
+    height: 30px;
+    text-align: center;
+    background-color: red;
+    border: 1px solid cyan;
+    border-radius: 25px;
+}
+
+
+
+
+
 
 @-webkit-keyframes check {
   50% {
@@ -279,6 +523,23 @@ a {
   }
 }
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   /* Media Query for devices withi coarse pointers and no hover functionality */
   
   /* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */

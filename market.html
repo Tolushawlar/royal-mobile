@@ -10,7 +10,73 @@
 </head>
 <link rel="stylesheet" id="google-fonts-1-css" href="https://fonts.googleapis.com/css?family=Play%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7COxanium%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CTomorrow%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=auto&amp;ver=5.8.2" type="text/css" media="all">
 
-<body>
+<style>
+    .market{
+        background-image: url('images/backgrounds/back1.jpeg');
+        object-fit: cover;
+        background-attachment: fixed;
+        background-size: cover;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nftContent{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .nft{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        margin: 20px;
+        align-items:center;
+    }
+    .nftList{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nftList .child{
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        align-items:center;
+        background-color: black;
+        color: wheat;
+        border: 1px solid rgb(76, 94, 94);
+        box-shadow: 6px 4px rgb(76, 94, 94);;
+        padding: 10px;
+    }
+    .child .btns{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .child .btns p{
+        margin-right: 60px;
+    }
+
+    .child .btns a{
+        background-color: yellow;
+        width: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+    }
+
+</style>
+<body style="overflow-x: hidden;">
     <header class="header">
         <nav class="navbar">
             <a href="index.html" class="nav-logo">
@@ -72,8 +138,306 @@
         </nav>
     </header>
 
+    <div class="market">
+        <div class="title">
+            <h1>NFT Marketplace</h1>
+        </div>
+        <div class="nftContent">
+            <div class="nft">
+                <h2>Weapon</h2>
+                <div class="nftList">
+                    <div class="child">
+                        <h2>weapon 1</h2>
+                        <img src="images/market/weapon/1639004389469.jpg" alt="nft" style="width: 120px; height: 100px;"/>
+                        <hr style="width: 120px;"/>
+                        <div class="btns">
+                            <p>Like</p>
+                            <a href="#">Buy</a>
+                        </div>
+                    </div>
+                    <div class="child">
+                        <h2>weapon 1</h2>
+                        <img src="images/market/weapon/1639004389494.jpg" alt="nft" style="width: 120px; height: 100px;"/>
+                        <hr style="width: 120px;"/>
+                        <div class="btns">
+                            <p>Like</p>
+                            <a href="#">Buy</a>
+                        </div>
+                    </div>
+                    <div class="child">
+                        <h2>weapon 1</h2>
+                        <img src="images/market/weapon/1639004389505.jpg" alt="nft" style="width: 120px; height: 100px;"/>
+                        <hr style="width: 120px;"/>
+                        <div class="btns">
+                            <p>Like</p>
+                            <a href="#">Buy</a>
+                        </div>
+                    </div>
+                    <div class="child">
+                        <h2>weapon 1</h2>
+                        <img src="images/market/elem.png" alt="nft" style="width: 120px; height: 100px;"/>
+                        <hr style="width: 120px;"/>
+                        <div class="btns">
+                            <p>Like</p>
+                            <a href="#">Buy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nft">
+                <h2>Helmet</h2>
+                <div class="nftList">
+                    <div class="child">
+                        <h2>weapon 1</h2>
+                        <img src="images/market/helmet/1639004366932.jpg" alt="nft" style="width: 120px; height: 100px;"/>
+                        <hr style="width: 120px;"/>
+                        <div class="btns">
+                            <p>Like</p>
+                            <a href="#">Buy</a>
+                        </div>
+                    </div>
+                    <div class="child">
+                        <h2>weapon 1</h2>
+                        <img src="images/market/helmet/163900436945.jpg" alt="nft" style="width: 120px; height: 100px;"/>
+                        <hr style="width: 120px;"/>
+                        <div class="btns">
+                            <p>Like</p>
+                            <a href="#">Buy</a>
+                        </div>
+                    </div>
+                    <div class="child">
+                        <h2>weapon 1</h2>
+                        <img src="images/market/helmet/1639004366962.jpg" alt="nft" style="width: 120px; height: 100px;"/>
+                        <hr style="width: 120px;"/>
+                        <div class="btns">
+                            <p>Like</p>
+                            <a href="#">Buy</a>
+                        </div>
+                    </div>
+                    <div class="child">
+                        <h2>weapon 1</h2>
+                        <img src="images/market/helmet/1639004366932.jpg" alt="nft" style="width: 120px; height: 100px;"/>
+                        <hr style="width: 120px;"/>
+                        <div class="btns">
+                            <p>Like</p>
+                            <a href="#">Buy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nft">
+                <h2>Magic Portion</h2>
+                <div class="nftList">
+                    <div class="child">
+                        <h2>weapon 1</h2>
+                        <img src="images/market/magic bottle/1639026519571_Magical fire potion.jpeg" alt="nft" style="width: 120px; height: 100px;"/>
+                        <hr style="width: 120px;"/>
+                        <div class="btns">
+                            <p>Like</p>
+                            <a href="#">Buy</a>
+                        </div>
+                    </div>
+                    <div class="child">
+                        <h2>weapon 1</h2>
+                        <img src="images/market/magic bottle/Green Bottle, Catherine Vlasova.jpeg" alt="nft" style="width: 120px; height: 100px;"/>
+                        <hr style="width: 120px;"/>
+                        <div class="btns">
+                            <p>Like</p>
+                            <a href="#">Buy</a>
+                        </div>
+                    </div>
+                    <div class="child">
+                        <h2>weapon 1</h2>
+                        <img src="images/market/magic bottle/1639003377754.jpg" alt="nft" style="width: 120px; height: 100px;"/>
+                        <hr style="width: 120px;"/>
+                        <div class="btns">
+                            <p>Like</p>
+                            <a href="#">Buy</a>
+                        </div>
+                    </div>
+                    <div class="child">
+                        <h2>weapon 1</h2>
+                        <img src="images/market/magic bottle/Magic Potion, Andrey Bormin (1).jpeg" alt="nft" style="width: 120px; height: 100px;"/>
+                        <hr style="width: 120px;"/>
+                        <div class="btns">
+                            <p>Like</p>
+                            <a href="#">Buy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <footer>
+            <div class="nft">
+                <h2>Legwork</h2>
+                <div class="nftList">
+                    <div class="child">
+                        <h2>weapon 1</h2>
+                        <img src="images/market/legwear/1639004328593.jpg" alt="nft" style="width: 120px; height: 100px;"/>
+                        <hr style="width: 120px;"/>
+                        <div class="btns">
+                            <p>Like</p>
+                            <a href="#">Buy</a>
+                        </div>
+                    </div>
+                    <div class="child">
+                        <h2>weapon 1</h2>
+                        <img src="images/market/legwear/1639004328607.jpg" alt="nft" style="width: 120px; height: 100px;"/>
+                        <hr style="width: 120px;"/>
+                        <div class="btns">
+                            <p>Like</p>
+                            <a href="#">Buy</a>
+                        </div>
+                    </div>
+                    <div class="child">
+                        <h2>weapon 1</h2>
+                        <img src="images/market/legwear/1639004328618.jpg" alt="nft" style="width: 120px; height: 100px;"/>
+                        <hr style="width: 120px;"/>
+                        <div class="btns">
+                            <p>Like</p>
+                            <a href="#">Buy</a>
+                        </div>
+                    </div>
+                    <div class="child">
+                        <h2>weapon 1</h2>
+                        <img src="images/market/legwear/1639004328593.jpg" alt="nft" style="width: 120px; height: 100px;"/>
+                        <hr style="width: 120px;"/>
+                        <div class="btns">
+                            <p>Like</p>
+                            <a href="#">Buy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nft">
+                <h2>Hearthstone</h2>
+                <div class="nftList">
+                    <div class="child">
+                        <h2>weapon 1</h2>
+                        <img src="images/market/elem.png" alt="nft" style="width: 120px; height: 100px;"/>
+                        <hr style="width: 120px;"/>
+                        <div class="btns">
+                            <p>Like</p>
+                            <a href="#">Buy</a>
+                        </div>
+                    </div>
+                    <div class="child">
+                        <h2>weapon 1</h2>
+                        <img src="images/market/elem.png" alt="nft" style="width: 120px; height: 100px;"/>
+                        <hr style="width: 120px;"/>
+                        <div class="btns">
+                            <p>Like</p>
+                            <a href="#">Buy</a>
+                        </div>
+                    </div>
+                    <div class="child">
+                        <h2>weapon 1</h2>
+                        <img src="images/market/elem.png" alt="nft" style="width: 120px; height: 100px;"/>
+                        <hr style="width: 120px;"/>
+                        <div class="btns">
+                            <p>Like</p>
+                            <a href="#">Buy</a>
+                        </div>
+                    </div>
+                    <div class="child">
+                        <h2>weapon 1</h2>
+                        <img src="images/market/elem.png" alt="nft" style="width: 120px; height: 100px;"/>
+                        <hr style="width: 120px;"/>
+                        <div class="btns">
+                            <p>Like</p>
+                            <a href="#">Buy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nft">
+                <h2>War Arror</h2>
+                <div class="nftList">
+                    <div class="child">
+                        <h2>weapon 1</h2>
+                        <img src="images/market/elem.png" alt="nft" style="width: 120px; height: 100px;"/>
+                        <hr style="width: 120px;"/>
+                        <div class="btns">
+                            <p>Like</p>
+                            <a href="#">Buy</a>
+                        </div>
+                    </div>
+                    <div class="child">
+                        <h2>weapon 1</h2>
+                        <img src="images/market/elem.png" alt="nft" style="width: 120px; height: 100px;"/>
+                        <hr style="width: 120px;"/>
+                        <div class="btns">
+                            <p>Like</p>
+                            <a href="#">Buy</a>
+                        </div>
+                    </div>
+                    <div class="child">
+                        <h2>weapon 1</h2>
+                        <img src="images/market/elem.png" alt="nft" style="width: 120px; height: 100px;"/>
+                        <hr style="width: 120px;"/>
+                        <div class="btns">
+                            <p>Like</p>
+                            <a href="#">Buy</a>
+                        </div>
+                    </div>
+                    <div class="child">
+                        <h2>weapon 1</h2>
+                        <img src="images/market/elem.png" alt="nft" style="width: 120px; height: 100px;"/>
+                        <hr style="width: 120px;"/>
+                        <div class="btns">
+                            <p>Like</p>
+                            <a href="#">Buy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nft">
+                <h2>Super epees</h2>
+                <div class="nftList">
+                    <div class="child">
+                        <h2>weapon 1</h2>
+                        <img src="images/market/elem.png" alt="nft" style="width: 120px; height: 100px;"/>
+                        <hr style="width: 120px;"/>
+                        <div class="btns">
+                            <p>Like</p>
+                            <a href="#">Buy</a>
+                        </div>
+                    </div>
+                    <div class="child">
+                        <h2>weapon 1</h2>
+                        <img src="images/market/elem.png" alt="nft" style="width: 120px; height: 100px;"/>
+                        <hr style="width: 120px;"/>
+                        <div class="btns">
+                            <p>Like</p>
+                            <a href="#">Buy</a>
+                        </div>
+                    </div>
+                    <div class="child">
+                        <h2>weapon 1</h2>
+                        <img src="images/market/elem.png" alt="nft" style="width: 120px; height: 100px;"/>
+                        <hr style="width: 120px;"/>
+                        <div class="btns">
+                            <p>Like</p>
+                            <a href="#">Buy</a>
+                        </div>
+                    </div>
+                    <div class="child">
+                        <h2>weapon 1</h2>
+                        <img src="images/market/elem.png" alt="nft" style="width: 120px; height: 100px;"/>
+                        <hr style="width: 120px;"/>
+                        <div class="btns">
+                            <p>Like</p>
+                            <a href="#">Buy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer ">
         <div class="footerLeft">
             <a href="#" class="nav-logo">
                 <img src="images/icons/logo.png"   alt=""headerImg" />

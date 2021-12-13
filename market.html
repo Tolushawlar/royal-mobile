@@ -12,7 +12,7 @@
 
 <style>
     .market{
-        background-image: url('images/backgrounds/back1.jpeg');
+        background: url('resources/backs/[GetPaidStock.com]-61b6ed7dafaf5.jpg') no-repeat;
         object-fit: cover;
         background-attachment: fixed;
         background-size: cover;
@@ -20,6 +20,13 @@
         flex-direction:column;
         align-items: center;
         justify-content: center;
+        color: #fff;
+    }
+
+    .market .title{
+        font-size: 20px;
+        color: #fff;
+        margin-top: 15px;
     }
 
     .nftContent{
@@ -53,6 +60,23 @@
         box-shadow: 6px 4px rgb(76, 94, 94);;
         padding: 10px;
     }
+
+    .nft h2:first-child{
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    .nftList .child h2{
+        font-size: 12px;
+    }
+
+    .child:hover {
+        box-shadow: 0 2px 6px 0 rgba(47,83,151,0.40); 
+       /*box-shadow: 0 0 20px 9px rgba(0,0,0,0.03);*/
+      transition: 400ms;
+
+     }
+
     .child .btns{
         display: flex;
         flex-direction: row;
@@ -61,18 +85,30 @@
         padding: 10px;
     }
 
+    .child .btns a:hover{
+        background-color: yellow;
+        transition: 400ms;
+
+    }
     .child .btns p{
         margin-right: 60px;
     }
 
+    .nftList .child img{
+        width: 130px !important;
+        height: 120px !important;
+    }
+
     .child .btns a{
-        background-color: yellow;
+        background-color: rgb(231, 228, 61);
         width: 50px;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         padding: 5px;
+        color: black;
+        font-weight: bolder;
     }
 
 </style>
@@ -147,38 +183,38 @@
                 <h2>Weapon</h2>
                 <div class="nftList">
                     <div class="child">
-                        <h2>weapon 1</h2>
-                        <img src="images/market/weapon/1639004389469.jpg" alt="nft" style="width: 120px; height: 100px;"/>
+                        <h2>Abyssal Hook</h2>
+                        <img src="resources/weapon/Abyssal Hook.jpg" alt="nft" style="width: 120px; height: 100px;"/>
                         <hr style="width: 120px;"/>
                         <div class="btns">
-                            <p>Like</p>
+                            <img src="resources/backs/like.png" alt="like" style=" cursor: pointer; border-radius:50%; width:22px !important; height:22px !important; margin-right: 50px; "/>
                             <a href="#">Buy</a>
                         </div>
                     </div>
                     <div class="child">
-                        <h2>weapon 1</h2>
-                        <img src="images/market/weapon/1639004389494.jpg" alt="nft" style="width: 120px; height: 100px;"/>
+                        <h2>Enforcers Blade</h2>
+                        <img src="resources/weapon/Enforcers Blade.jpg" alt="nft" style="width: 120px; height: 100px;"/>
                         <hr style="width: 120px;"/>
                         <div class="btns">
-                            <p>Like</p>
+                            <img src="resources/backs/like.png" alt="like" style=" cursor: pointer; border-radius:50%; width:22px !important; height:22px !important; margin-right: 50px; "/>
                             <a href="#">Buy</a>
                         </div>
                     </div>
                     <div class="child">
-                        <h2>weapon 1</h2>
-                        <img src="images/market/weapon/1639004389505.jpg" alt="nft" style="width: 120px; height: 100px;"/>
+                        <h2>Guillotine</h2>
+                        <img src="resources/weapon/Guillotine.jpg" alt="nft" style="width: 120px; height: 100px;"/>
                         <hr style="width: 120px;"/>
                         <div class="btns">
-                            <p>Like</p>
+                            <img src="resources/backs/like.png" alt="like" style=" cursor: pointer; border-radius:50%; width:22px !important; height:22px !important; margin-right: 50px; "/>
                             <a href="#">Buy</a>
                         </div>
                     </div>
                     <div class="child">
-                        <h2>weapon 1</h2>
-                        <img src="images/market/elem.png" alt="nft" style="width: 120px; height: 100px;"/>
+                        <h2>sorrowsong</h2>
+                        <img src="resources/weapon/sorrowsong.jpg"width: 120px; height: 100px;"/>
                         <hr style="width: 120px;"/>
                         <div class="btns">
-                            <p>Like</p>
+                            <img src="resources/backs/like.png" alt="like" style=" cursor: pointer; border-radius:50%; width:22px !important; height:22px !important; margin-right: 50px; "/>
                             <a href="#">Buy</a>
                         </div>
                     </div>
@@ -188,38 +224,38 @@
                 <h2>Helmet</h2>
                 <div class="nftList">
                     <div class="child">
-                        <h2>weapon 1</h2>
-                        <img src="images/market/helmet/1639004366932.jpg" alt="nft" style="width: 120px; height: 100px;"/>
+                        <h2>Azure Helmet</h2>
+                        <img src="resources/helmet/Azure Helmet.jpg" alt="nft" style="width: 120px; height: 100px;"/>
                         <hr style="width: 120px;"/>
                         <div class="btns">
-                            <p>Like</p>
+                            <img src="resources/backs/like.png" alt="like" style=" cursor: pointer; border-radius:50%; width:22px !important; height:22px !important; margin-right: 50px; "/>
                             <a href="#">Buy</a>
                         </div>
                     </div>
                     <div class="child">
-                        <h2>weapon 1</h2>
-                        <img src="images/market/helmet/163900436945.jpg" alt="nft" style="width: 120px; height: 100px;"/>
+                        <h2>Commande's cuirass</h2>
+                        <img src="resources/helmet/Commande's cuirass.jpg " alt="nft" style="width: 120px; height: 100px;"/>
                         <hr style="width: 120px;"/>
                         <div class="btns">
-                            <p>Like</p>
+                            <img src="resources/backs/like.png" alt="like" style=" cursor: pointer; border-radius:50%; width:22px !important; height:22px !important; margin-right: 50px; "/>
                             <a href="#">Buy</a>
                         </div>
                     </div>
                     <div class="child">
-                        <h2>weapon 1</h2>
-                        <img src="images/market/helmet/1639004366962.jpg" alt="nft" style="width: 120px; height: 100px;"/>
+                        <h2> Dragon Helmet</h2>
+                        <img src="resources/helmet/Dragon Helmet.jpg" alt="nft" style="width: 120px; height: 100px;"/>
                         <hr style="width: 120px;"/>
                         <div class="btns">
-                            <p>Like</p>
+                            <img src="resources/backs/like.png" alt="like" style=" cursor: pointer; border-radius:50%; width:22px !important; height:22px !important; margin-right: 50px; "/>
                             <a href="#">Buy</a>
                         </div>
                     </div>
                     <div class="child">
-                        <h2>weapon 1</h2>
-                        <img src="images/market/helmet/1639004366932.jpg" alt="nft" style="width: 120px; height: 100px;"/>
+                        <h2>Netherworld mask</h2>
+                        <img src="resources/helmet/Netherworld mask.jpg" alt="nft" style="width: 120px; height: 100px;"/>
                         <hr style="width: 120px;"/>
                         <div class="btns">
-                            <p>Like</p>
+                            <img src="resources/backs/like.png" alt="like" style=" cursor: pointer; border-radius:50%; width:22px !important; height:22px !important; margin-right: 50px; "/>
                             <a href="#">Buy</a>
                         </div>
                     </div>
@@ -229,80 +265,38 @@
                 <h2>Magic Portion</h2>
                 <div class="nftList">
                     <div class="child">
-                        <h2>weapon 1</h2>
-                        <img src="images/market/magic bottle/1639026519571_Magical fire potion.jpeg" alt="nft" style="width: 120px; height: 100px;"/>
+                        <h2>Magic Potions</h2>
+                        <img src="resources/magic portion/Magic Potions.jpeg" alt="nft" style="width: 120px; height: 100px;"/>
                         <hr style="width: 120px;"/>
                         <div class="btns">
-                            <p>Like</p>
+                            <img src="resources/backs/like.png" alt="like" style=" cursor: pointer; border-radius:50%; width:22px !important; height:22px !important; margin-right: 50px; "/>
                             <a href="#">Buy</a>
                         </div>
                     </div>
                     <div class="child">
-                        <h2>weapon 1</h2>
-                        <img src="images/market/magic bottle/Green Bottle, Catherine Vlasova.jpeg" alt="nft" style="width: 120px; height: 100px;"/>
+                        <h2>Magic Props</h2>
+                        <img src="resources/magic portion/Magic Props.jpeg"  alt="nft" style="width: 120px; height: 100px;"/>
                         <hr style="width: 120px;"/>
                         <div class="btns">
-                            <p>Like</p>
+                            <img src="resources/backs/like.png" alt="like" style=" cursor: pointer; border-radius:50%; width:22px !important; height:22px !important; margin-right: 50px; "/>
                             <a href="#">Buy</a>
                         </div>
                     </div>
                     <div class="child">
-                        <h2>weapon 1</h2>
-                        <img src="images/market/magic bottle/1639003377754.jpg" alt="nft" style="width: 120px; height: 100px;"/>
+                        <h2>Magic Vorster</h2>
+                        <img src="resources/magic portion/Magic Vorster.jpg"  alt="nft" style="width: 120px; height: 100px;"/>
                         <hr style="width: 120px;"/>
                         <div class="btns">
-                            <p>Like</p>
+                            <img src="resources/backs/like.png" alt="like" style=" cursor: pointer; border-radius:50%; width:22px !important; height:22px !important; margin-right: 50px; "/>
                             <a href="#">Buy</a>
                         </div>
                     </div>
                     <div class="child">
-                        <h2>weapon 1</h2>
-                        <img src="images/market/magic bottle/Magic Potion, Andrey Bormin (1).jpeg" alt="nft" style="width: 120px; height: 100px;"/>
+                        <h2>Magic stuff</h2>
+                        <img src="resources/magic portion/Magic stuff.jpeg"  alt="nft" style="width: 120px; height: 100px;"/>
                         <hr style="width: 120px;"/>
                         <div class="btns">
-                            <p>Like</p>
-                            <a href="#">Buy</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="nft">
-                <h2>Legwork</h2>
-                <div class="nftList">
-                    <div class="child">
-                        <h2>weapon 1</h2>
-                        <img src="images/market/legwear/1639004328593.jpg" alt="nft" style="width: 120px; height: 100px;"/>
-                        <hr style="width: 120px;"/>
-                        <div class="btns">
-                            <p>Like</p>
-                            <a href="#">Buy</a>
-                        </div>
-                    </div>
-                    <div class="child">
-                        <h2>weapon 1</h2>
-                        <img src="images/market/legwear/1639004328607.jpg" alt="nft" style="width: 120px; height: 100px;"/>
-                        <hr style="width: 120px;"/>
-                        <div class="btns">
-                            <p>Like</p>
-                            <a href="#">Buy</a>
-                        </div>
-                    </div>
-                    <div class="child">
-                        <h2>weapon 1</h2>
-                        <img src="images/market/legwear/1639004328618.jpg" alt="nft" style="width: 120px; height: 100px;"/>
-                        <hr style="width: 120px;"/>
-                        <div class="btns">
-                            <p>Like</p>
-                            <a href="#">Buy</a>
-                        </div>
-                    </div>
-                    <div class="child">
-                        <h2>weapon 1</h2>
-                        <img src="images/market/legwear/1639004328593.jpg" alt="nft" style="width: 120px; height: 100px;"/>
-                        <hr style="width: 120px;"/>
-                        <div class="btns">
-                            <p>Like</p>
+                            <img src="resources/backs/like.png" alt="like" style=" cursor: pointer; border-radius:50%; width:22px !important; height:22px !important; margin-right: 50px; "/>
                             <a href="#">Buy</a>
                         </div>
                     </div>
@@ -310,41 +304,41 @@
             </div>
 
             <div class="nft">
-                <h2>Hearthstone</h2>
+                <h2>Legwear</h2>
                 <div class="nftList">
                     <div class="child">
-                        <h2>weapon 1</h2>
-                        <img src="images/market/elem.png" alt="nft" style="width: 120px; height: 100px;"/>
+                        <h2>Amperial armor</h2>
+                        <img src="resources/legwear/Amperial armor (2).jpg" alt="nft" style="width: 120px; height: 100px;"/>
                         <hr style="width: 120px;"/>
                         <div class="btns">
-                            <p>Like</p>
+                            <img src="resources/backs/like.png" alt="like" style=" cursor: pointer; border-radius:50%; width:22px !important; height:22px !important; margin-right: 50px; "/>
                             <a href="#">Buy</a>
                         </div>
                     </div>
                     <div class="child">
-                        <h2>weapon 1</h2>
-                        <img src="images/market/elem.png" alt="nft" style="width: 120px; height: 100px;"/>
+                        <h2> Flame greaves</h2>
+                        <img src="resources/legwear/Flame greaves.jpg" alt="nft" style="width: 120px; height: 100px;"/>
                         <hr style="width: 120px;"/>
                         <div class="btns">
-                            <p>Like</p>
+                            <img src="resources/backs/like.png" alt="like" style=" cursor: pointer; border-radius:50%; width:22px !important; height:22px !important; margin-right: 50px; "/>
                             <a href="#">Buy</a>
                         </div>
                     </div>
                     <div class="child">
-                        <h2>weapon 1</h2>
-                        <img src="images/market/elem.png" alt="nft" style="width: 120px; height: 100px;"/>
+                        <h2> Frost walkers</h2>
+                        <img src="resources/legwear/Frost walkers.jpg" alt="nft" style="width: 120px; height: 100px;"/>
                         <hr style="width: 120px;"/>
                         <div class="btns">
-                            <p>Like</p>
+                            <img src="resources/backs/like.png" alt="like" style=" cursor: pointer; border-radius:50%; width:22px !important; height:22px !important; margin-right: 50px; "/>
                             <a href="#">Buy</a>
                         </div>
                     </div>
                     <div class="child">
-                        <h2>weapon 1</h2>
-                        <img src="images/market/elem.png" alt="nft" style="width: 120px; height: 100px;"/>
+                        <h2> Ranger mukluk</h2>
+                        <img src="resources/legwear/Ranger mukluks.jpg" alt="nft" style="width: 120px; height: 100px;"/>
                         <hr style="width: 120px;"/>
                         <div class="btns">
-                            <p>Like</p>
+                            <img src="resources/backs/like.png" alt="like" style=" cursor: pointer; border-radius:50%; width:22px !important; height:22px !important; margin-right: 50px; "/>
                             <a href="#">Buy</a>
                         </div>
                     </div>
@@ -352,41 +346,83 @@
             </div>
 
             <div class="nft">
-                <h2>War Arror</h2>
+                <h2>Magic Books</h2>
                 <div class="nftList">
                     <div class="child">
-                        <h2>weapon 1</h2>
-                        <img src="images/market/elem.png" alt="nft" style="width: 120px; height: 100px;"/>
+                        <h2> Alexandr Nepogoda</h2>
+                        <img src="resources/magic books/BOOK, Alexandr Nepogoda.jpeg" style="width: 120px; height: 100px;"/>
                         <hr style="width: 120px;"/>
                         <div class="btns">
-                            <p>Like</p>
+                            <img src="resources/backs/like.png" alt="like" style=" cursor: pointer; border-radius:50%; width:22px !important; height:22px !important; margin-right: 50px; "/>
+                            <a href="#">Buy</a>
+                        </div>
+                    </div>
+                    <div class="child">
+                        <h2>Forest Magic Book</h2>
+                        <img src="resources/magic books/Forest Magic Book.jpeg" style="width: 120px; height: 100px;"/>
+                        <hr style="width: 120px;"/>
+                        <div class="btns">
+                            <img src="resources/backs/like.png" alt="like" style=" cursor: pointer; border-radius:50%; width:22px !important; height:22px !important; margin-right: 50px; "/>
+                            <a href="#">Buy</a>
+                        </div>
+                    </div>
+                    <div class="child">
+                        <h2>Jaina Book</h2>
+                        <img src="resources/magic books/Jaina Book.jpeg" style="width: 120px; height: 100px;"/>
+                        <hr style="width: 120px;"/>
+                        <div class="btns">
+                            <img src="resources/backs/like.png" alt="like" style=" cursor: pointer; border-radius:50%; width:22px !important; height:22px !important; margin-right: 50px; "/>
+                            <a href="#">Buy</a>
+                        </div>
+                    </div>
+                    <div class="child">
+                        <h2> Paladin's magical book</h2>
+                        <img src="resources/magic books/Paladin's magical book.jpeg" style="width: 120px; height: 100px;"/>
+                        <hr style="width: 120px;"/>
+                        <div class="btns">
+                            <img src="resources/backs/like.png" alt="like" style=" cursor: pointer; border-radius:50%; width:22px !important; height:22px !important; margin-right: 50px; "/>
+                            <a href="#">Buy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nft">
+                <h2>Armor</h2>
+                <div class="nftList">
+                    <div class="child">
+                        <h2>Amperial Armor</h2>
+                        <img src="resources/armor/Amperial Armor.jpg" width: 120px; height: 100px;"/>
+                        <hr style="width: 120px;"/>
+                        <div class="btns">
+                            <img src="resources/backs/like.png" alt="like" style=" cursor: pointer; border-radius:50%; width:22px !important; height:22px !important; margin-right: 50px; "/>
+                            <a href="#">Buy</a>
+                        </div>
+                    </div>
+                    <div class="child">
+                        <h2>/Dreamer's Robe</h2>
+                        <img src="resources/armor/Dreamers Robe.jpg" width: 120px; height: 100px;"/>
+                        <hr style="width: 120px;"/>
+                        <div class="btns">
+                            <img src="resources/backs/like.png" alt="like" style=" cursor: pointer; border-radius:50%; width:22px !important; height:22px !important; margin-right: 50px; "/>
+                            <a href="#">Buy</a>
+                        </div>
+                    </div>
+                    <div class="child">
+                        <h2>Enkindled Plate</h2>
+                        <img src="resources/armor/Enkindled Plate.jpg"width: 120px; height: 100px;"/>
+                        <hr style="width: 120px;"/>
+                        <div class="btns">
+                            <img src="resources/backs/like.png" alt="like" style=" cursor: pointer; border-radius:50%; width:22px !important; height:22px !important; margin-right: 50px; "/>
                             <a href="#">Buy</a>
                         </div>
                     </div>
                     <div class="child">
                         <h2>weapon 1</h2>
-                        <img src="images/market/elem.png" alt="nft" style="width: 120px; height: 100px;"/>
+                        <img src="resources/armor/Amperial Armor.jpg"width: 120px; height: 100px;"/>
                         <hr style="width: 120px;"/>
                         <div class="btns">
-                            <p>Like</p>
-                            <a href="#">Buy</a>
-                        </div>
-                    </div>
-                    <div class="child">
-                        <h2>weapon 1</h2>
-                        <img src="images/market/elem.png" alt="nft" style="width: 120px; height: 100px;"/>
-                        <hr style="width: 120px;"/>
-                        <div class="btns">
-                            <p>Like</p>
-                            <a href="#">Buy</a>
-                        </div>
-                    </div>
-                    <div class="child">
-                        <h2>weapon 1</h2>
-                        <img src="images/market/elem.png" alt="nft" style="width: 120px; height: 100px;"/>
-                        <hr style="width: 120px;"/>
-                        <div class="btns">
-                            <p>Like</p>
+                            <img src="resources/backs/like.png" alt="like" style=" cursor: pointer; border-radius:50%; width:22px !important; height:22px !important; margin-right: 50px; "/>
                             <a href="#">Buy</a>
                         </div>
                     </div>
@@ -397,38 +433,38 @@
                 <h2>Super epees</h2>
                 <div class="nftList">
                     <div class="child">
-                        <h2>weapon 1</h2>
-                        <img src="images/market/elem.png" alt="nft" style="width: 120px; height: 100px;"/>
+                        <h2>Aquila</h2>
+                        <img src="resources/super epees/Aquila.jpeg"width: 120px; height: 100px;"/>
                         <hr style="width: 120px;"/>
                         <div class="btns">
-                            <p>Like</p>
+                            <img src="resources/backs/like.png" alt="like" style=" cursor: pointer; border-radius:50%; width:22px !important; height:22px !important; margin-right: 50px; "/>
                             <a href="#">Buy</a>
                         </div>
                     </div>
                     <div class="child">
-                        <h2>weapon 1</h2>
-                        <img src="images/market/elem.png" alt="nft" style="width: 120px; height: 100px;"/>
+                        <h2> Balmung</h2>
+                        <img src="resources/super epees/Balmung.jpeg"width: 120px; height: 100px;"/>
                         <hr style="width: 120px;"/>
                         <div class="btns">
-                            <p>Like</p>
+                            <img src="resources/backs/like.png" alt="like" style=" cursor: pointer; border-radius:50%; width:22px !important; height:22px !important; margin-right: 50px; "/>
                             <a href="#">Buy</a>
                         </div>
                     </div>
                     <div class="child">
-                        <h2>weapon 1</h2>
-                        <img src="images/market/elem.png" alt="nft" style="width: 120px; height: 100px;"/>
+                        <h2> Dragoon</h2>
+                        <img src="resources/super epees/Dragoon.jpeg"width: 120px; height: 100px;"/>
                         <hr style="width: 120px;"/>
                         <div class="btns">
-                            <p>Like</p>
+                            <img src="resources/backs/like.png" alt="like" style=" cursor: pointer; border-radius:50%; width:22px !important; height:22px !important; margin-right: 50px; "/>
                             <a href="#">Buy</a>
                         </div>
                     </div>
                     <div class="child">
-                        <h2>weapon 1</h2>
-                        <img src="images/market/elem.png" alt="nft" style="width: 120px; height: 100px;"/>
+                        <h2> Tanjiro</h2>
+                        <img src="resources/super epees/Tanjiro.jpeg"width: 120px; height: 100px;"/>
                         <hr style="width: 120px;"/>
                         <div class="btns">
-                            <p>Like</p>
+                            <img src="resources/backs/like.png" alt="like" style=" cursor: pointer; border-radius:50%; width:22px !important; height:22px !important; margin-right: 50px; "/>
                             <a href="#">Buy</a>
                         </div>
                     </div>

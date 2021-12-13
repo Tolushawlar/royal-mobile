@@ -154,10 +154,6 @@ a {
     width: auto;
     height: auto;
     z-index: 0;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
   }
   
 .vidSec .container {
@@ -359,7 +355,7 @@ a {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
+    padding: 20px;
     background-image: url('images/backgrounds/back4.jpeg');
     background-size:100vw;
     background-repeat: space;
@@ -379,7 +375,7 @@ a {
 .featureCat{
     display: flex;
     flex-direction: column;
-    margin:30px;
+    margin:10px;
     justify-content: space-between;
     align-items: center;
 }
@@ -395,8 +391,8 @@ a {
 .cat{
     width: 300px;
     height: 300px;
-    padding: 20px;
-    margin: 30px;
+    padding: 10px;
+    margin: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -418,8 +414,9 @@ a {
 }
 
 .innerCat{
-  background-color: red;
+  background-color:  rgb(76, 94, 94);;
   width:250px;
+  padding: 5px;
 }
 
 
@@ -681,12 +678,20 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: red;
+    background: url('resources/backs/[GetPaidStock.com]-61b6ed7dafaf5.jpg') no-repeat;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     align-items: center;
     padding: 20px;
     
   }
 
+  .partners .title{
+    font-size: 20px;
+    margin: 10px;
+    color: #fff;
+  }
   .PartnersContent{
     display:flex;
     flex-direction: column;
@@ -977,13 +982,14 @@ a {
   .content {
   
     padding: 20px 30px;
-  
-    background-color: white;
-  
+    font-weight: bolder;
     position: relative;
     line-height: 20px;
     border-radius: 6px;
-    background-color: rgba(0,0,0,0.6);
+    background-image: url('images/backgrounds/roadmap.jpeg');
+    object-fit: cover;
+    
+    
   
   }
   

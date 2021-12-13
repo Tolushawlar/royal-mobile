@@ -163,6 +163,67 @@ html {
     border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
     }
 
+
+    #my-pie-chart-container {
+        display: flex;
+        align-items: center;
+      }
+      
+      #my-pie-chart {
+        background: conic-gradient(brown 0.00%, black 0.00% 0.55%, blue 0.55% 6.08%, green 6.08% 13.68%, yellow 13.68% 23.27%, orange 23.27% 40.47%, red 40.47%);
+        border-radius: 50%;
+          width: 150px;
+          height: 150px;
+      }
+      
+      #legenda {
+        margin-left: 20px;
+        background-color: white;
+        padding: 5px;
+      }
+      
+      .entry {
+        display: flex;
+        align-items: center;
+      }
+      
+      .entry-color {
+          height: 10px;
+          width: 10px;
+      }
+      
+      .entry-text {
+        margin-left: 5px;
+      }
+      
+      #color-red {
+        background-color: red;
+      }
+      
+      #color-orange {
+        background-color: orange;
+      }
+      
+      #color-yellow {
+        background-color: yellow;
+      }
+      
+      #color-green {
+        background-color: green;
+      }
+      
+      #color-blue {
+        background-color: blue;
+      }
+      
+      #color-black {
+        background-color: black;
+      }
+      
+      #color-brown {
+        background-color: brown;
+      }
+
     @media(max-width:767px) {
    
     
@@ -185,7 +246,7 @@ html {
                     <a href="#" class="nav-link">NFT Access</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Whitepaper</a>
+                    <a href="token.html" class="nav-link">RYL Token</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">Partner</a>
@@ -257,9 +318,10 @@ html {
         </div>
       
         <!-- The HTML5 video element that will create the background video on the section -->
-        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-          <source src="animate/1638611320348.mp4" type="video/mp4">
-        </video>
+            <video width="320" height="240" controls>
+                <source src="resources/backs/VID-20211213-WA0005.mp4" type="video/mp4">
+                <p>Your Browsers doesn't support this video</p>
+            </video>
       
       </section>
 
@@ -280,7 +342,7 @@ html {
             <div class="royalRight">
               <!-- The HTML5 video element that will create the background video on the section -->
               <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-                <source src="animate/royalShort.mp4" type="video/mp4">
+                <source src="resources/backs/1638180197788.mp4" type="video/mp4">
               </video>
             </div>
         </section>
@@ -560,45 +622,43 @@ html {
             <h1>Tokenomics</h1>
         </div>
         <div class="contentContainer" style="width: 100%;">
+            <h1>Tokenomics distribution</h1>
 
-            <div class="skillBar">
-              <h4>Play To earn :47.25%</h4>
-              <div class="skillBarContainer">
-                <div class="skillBarValue value-50"></div>
-              </div>
+            <div id="my-pie-chart-container">
+            <div id="my-pie-chart"></div>
+
+            <div id="legenda">
+                <div class="entry">
+                <div id="color-brown" class="entry-color"></div>
+                <div class="entry-text">Play To Earn: 47.25%</div>
+                </div>
+                <div class="entry">
+                <div id="color-blue" class="entry-color"></div>
+                <div class="entry-text">Liquidity: 15.50%</div>
+                </div>
+                <div class="entry">
+                <div id="color-green" class="entry-color"></div>
+                <div class="entry-text">Marketing: 4.75%</div>
+                </div>
+                <div class="entry">
+                <div id="color-yellow" class="entry-color"></div>
+                <div class="entry-text">Team: 15%</div>
+                </div>
+                <div class="entry">
+                <div id="color-orange" class="entry-color"></div>
+                <div class="entry-text">Community Incentive: 6.5%</div>
+                </div>
+                <div class="entry">
+                <div id="color-red" class="entry-color"></div>
+                <div class="entry-text">Pre Sale: 11%</div>
+                </div>
             </div>
-          
-            <div class="skillBar">
-              <h4>Liquidity.        :15.50</h4>
-              <div class="skillBarContainer">
-                <div class="skillBarValue value-20"></div>
-              </div>
-            </div>
-    
-            <div class="skillBar">
-              <h4>Marketing. :4.75%</h4>
-              <div class="skillBarContainer">
-                <div class="skillBarValue value-05"></div>
-              </div>
-            </div>
-          
-            <div class="skillBar">
-              <h4>Team. :15%</h4>
-              <div class="skillBarContainer">
-                <div class="skillBarValue value-20"></div>
-              </div>
-            </div>
-            
-            <div class="skillBar">
-              <h4>Pré salle 11%</h4>
-              <div class="skillBarContainer">
-                <div class="skillBarValue value-10"></div>
-              </div>
             </div>
         </div>
     </div>
       
 
+   
     <section class="features">
         <div class="featureTitle">
             <h4>GAME FEATURES</h4>
@@ -608,35 +668,47 @@ html {
                 <div class="cat">
                     <p>HEROES:</p>
                     <img src="images/features/IMG-20211206-WA0022.jpg" alt="features" />c
-                    <p class="innerCat">To become a courageous and unrivaled hero, you must go through hundreds of heaven challenges, pass thousands of life-and-death missions to train all your abilities.</p>
+                    <p class="innerCat">
+                        To become a courageous a hero, by going through hundreds of heaven challenges.
+                    </p>
                     
                 </div>
                 <div class="cat">
                     <p>WORLD BOSS:</p>
                     <img src="images/features/IMG-20211206-WA0023.jpg" alt="features" />c
-                    <p class="innerCat">Heaven monsters are summoned to harm the world, so 12 vassals have to all gather to defeat them and earn their resources. Those monsters contain a lot of valuable resources, destroying them can earn many incredible rewards.        
+                    <p class="innerCat">
+                        Gather to defeat Heaven monsters from other world, and earn their resources.
+                    </p>
                 </div>
                 <div class="cat">
                     <p>STRATEGY:</p>
                     <img src="images/features/IMG-20211206-WA0024.jpg" alt="features" />c
-                    <p class="innerCat">Stimulating all kinds of strategies can bring players the power to destroy heaven and earth since ancient times. The strategies are modified to match the types of troops to increase the maximum strength of heroes. For that reason, players can use their strategies to improve the power of soldiers.
+                    <p class="innerCat">
+                        Stimulating all kinds of strategies can bring players the power to destroy heaven and earth.
+                    </p>
                 </div>
             </div>
             <div class="featureCat2" style="margin-top:40px;">
                 <div class="cat">
                     <p>TAVERN:</p>
                     <img src="images/features/IMG-20211206-WA0025.jpg" alt="features" />c
-                    <p class="innerCat">The Tavern is where all talented heroes gather to talk about their stories. Heroes are just ordinary people and will become ashes over time if they don't choose the right master. Who will be named in the history books, who will be forgotten in the history line, it all depends on your choice.
+                    <p class="innerCat">
+                        The Tavern is where all talented heroes gather to talk about their stories.
+                    </p>
                 </div>
                 <div class="cat">
                     <p>NATION WAR:</p>
                     <img src="images/features/IMG-20211206-WA0026.jpg" alt="features" />c
-                    <p class="innerCat">The dispute between the three forces has been going on for hundreds of years and destroying thousands of people's lives. In that scenario, who will be the son of heaven to unify the country and bring peace to people.
+                    <p class="innerCat"> 
+                        Who will be the son of heaven to unify the country and bring peace to people.
+                    </p>
                 </div>
                 <div class="cat">
                     <p>RESOURCES:</p>
                     <img src="images/features/IMG-20211206-WA0027.jpg" alt="features" />c
-                    <p class="innerCat">Minerals lie under thousands of meters from the ground, which is extremely difficult to discover and exploit. Each mineral mine produces a large number of resources leading to a lot of fierce disputes between forces.</p>
+                    <p class="innerCat">
+                        Minerals lie under the ground, produces a large number of resources
+                    .</p>
                 </div>
             </div>
         </div>
@@ -716,7 +788,7 @@ html {
                     <img src="images/partners/OIP.jpg" style="width: 170px; height: 170px; border-radius:50%;" />
                 </div>
                 <div class="partCont">
-                    <img src="images/partners/p7.jpeg"  style="width: 170px; height: 170px; border-radius:50%;"/>
+                    <img src="images/partners/p7.jpeg" />
                 </div>
                 <div class="partCont">
                     <img src="images/partners/R.jpg" />
@@ -736,7 +808,7 @@ html {
                     <img src="images/partners/p1.png" />
                 </div>
                 <div class="partCont">
-                    <img src="images/partners/p9.jpeg"  style="width: 170px; height: 170px; border-radius:50%;" />
+                    <img src="images/partners/p3.png" />
                 </div>
             </div>
         </div>

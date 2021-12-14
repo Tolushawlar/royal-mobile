@@ -9,229 +9,10 @@
     <title> Mobile Royale</title>
 </head>
 <link rel="stylesheet" id="google-fonts-1-css" href="https://fonts.googleapis.com/css?family=Play%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7COxanium%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CTomorrow%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=auto&amp;ver=5.8.2" type="text/css" media="all">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap" rel="stylesheet">
 
-<style>
-    /*///////////////////////////////////////////////////
-    // Presentational Styles (Not Needed) \\ 
-///////////////////////////////////////////////////*/
-html {
-    background-image: url('images/backgrounds/back4.jpeg');
-    background-size:100vw;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    
-  }
-  .contentContainer {
-    background:#c0bcbc;
-    padding:20px;
-    max-width:350px;
-    min-width:150px;
-    margin:15vh auto;
-    border-radius:10px;
-    border:solid 5px #dbdbdb;
-  }
-  
-  /*///////////////////////////////////////////////////
-      // Skill Bars \\ 
-  ///////////////////////////////////////////////////*/
-  .skillBar {
-    margin-bottom:26px;
-    margin-bottom: 1.66em;
-    
-  }
-
-  .skillBar h4 {
-    font-size:21px;
-    font-size: 1.33em;
-    text-transform: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    margin-bottom:7px;
-    margin-bottom: .33em;
-  }
-  .skillBarContainer {
-    width: 100%;
-    max-width: 350px;
-    height:26px;
-    height: 1.66em;
-    background: #e6eae3;
-    background: rgb(8,102,220);
-    background: rgba(8,102,220,.2);
-    overflow: hidden;
-    border-radius:5px;
-  }
-  .skillBarValue {
-    height: 1.66em;
-    float: left;
-    background:#0866dc;
-    background: rgb(8,102,220);
-    background: rgba(8,102,220,.75);
-  }
-  
-  /* Allowed values for the css skill bars */
-  .value-00  { width: 0;    }
-  .value-05  { width: 5%;    }
-  .value-10  { width: 10%;  }
-  .value-20  { width: 20%;  }
-  .value-25  { width: 25%;  }
-  .value-30  { width: 30%;  }
-  .value-40  { width: 40%;  }
-  .value-50  { width: 50%;  }
-  .value-60  { width: 60%;  }
-  .value-70  { width: 70%;  }
-  .value-80  { width: 80%;  }
-  .value-90  { width: 90%;  }
-  .value-100 { width: 100%; }
-  
-  /*///////////////////////////////////////////////////
-      // Animation \\ 
-  ///////////////////////////////////////////////////*/
-  @-webkit-keyframes slideIn {
-    0% { width: 0; }
-    25% { width:100%; }
-    100% { width: normal; }
-  }
-  @-moz-keyframes slideIn {
-    0% { width: 0; }
-    25% { width:100%; }
-    100% { width: normal; }
-  }
-  @-ms-keyframes slideIn {
-    0% { width: 0; }
-    25% { width:100%; }
-    100% { width: normal; }
-  }
-  @-o-keyframes slideIn {
-    0% { width: 0; }
-    25% { width:100%; }
-    100% { width: normal; }
-  }
-  @keyframes slideIn {
-    0% { width: 0; }
-    25% { width:100%; }
-    100% { width: normal; }
-  }
-  .skillBarValue {
-    -webkit-animation: slideIn 2s;
-    -moz-animation: slideIn 2s;
-    -o-animation: slideIn 2s;
-    animation: slideIn 2s;
-  }
-
-    @import url('https://fonts.googleapis.com/css?family=Montserrat');
-
-    .accordion {
-    width: 90%;
-    max-width: 1000px;
-    margin: 2rem auto;
-    }
-    .accordion-item {
-    background-color: #fff;
-    color: #111;
-    margin: 1rem 0;
-    border-radius: 0.5rem;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
-    }
-    .accordion-item-header {
-    padding: 0.5rem 3rem 0.5rem 1rem;
-    min-height: 3.5rem;
-    line-height: 1.25rem;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    position: relative;
-    cursor: pointer;
-    }
-    .accordion-item-header::after {
-    content: "\002B";
-    font-size: 2rem;
-    position: absolute;
-    right: 1rem;
-    }
-    .accordion-item-header.active::after {
-    content: "\2212";
-    }
-    .accordion-item-body {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    }
-    .accordion-item-body-content {
-    padding: 1rem;
-    line-height: 1.5rem;
-    border-top: 1px solid;
-    border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
-    }
-
-
-    #my-pie-chart-container {
-        display: flex;
-        align-items: center;
-      }
-      
-      #my-pie-chart {
-        background: conic-gradient(brown 0.00%, black 0.00% 0.55%, blue 0.55% 6.08%, green 6.08% 13.68%, yellow 13.68% 23.27%, orange 23.27% 40.47%, red 40.47%);
-        border-radius: 50%;
-          width: 150px;
-          height: 150px;
-      }
-      
-      #legenda {
-        margin-left: 20px;
-        background-color: white;
-        padding: 5px;
-      }
-      
-      .entry {
-        display: flex;
-        align-items: center;
-      }
-      
-      .entry-color {
-          height: 10px;
-          width: 10px;
-      }
-      
-      .entry-text {
-        margin-left: 5px;
-      }
-      
-      #color-red {
-        background-color: red;
-      }
-      
-      #color-orange {
-        background-color: orange;
-      }
-      
-      #color-yellow {
-        background-color: yellow;
-      }
-      
-      #color-green {
-        background-color: green;
-      }
-      
-      #color-blue {
-        background-color: blue;
-      }
-      
-      #color-black {
-        background-color: black;
-      }
-      
-      #color-brown {
-        background-color: brown;
-      }
-
-    @media(max-width:767px) {
-   
-    
-
-    }
-
-
-</style>
 <body>
     <header class="header">
         <nav class="navbar">
@@ -300,7 +81,7 @@ html {
         <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
         <div class="overlay">
             <div>
-                <p>NFT Gameroyal the nect gen gaming & marketplace.</p>
+                <p>NFT Gameroyal the next gen gaming & marketplace.</p>
             </div>
             <div>
                 <p>Buy, Sell and Earn NFT's on Moblie Royal</p>
@@ -308,17 +89,17 @@ html {
             <div>
                 <span class="overBtn">
                     <span class="btn1">
-                        Buy Token 
+                        <a href="coming.html">Buy Token</a>
                     </span>
                     <span class="btn2">
-                        NFT Marketplace
+                        <a href="market.html" style="color: goldenrod !important;">NFT Marketplace</a>
                     </span>
                 </span>
             </div>
         </div>
       
         <!-- The HTML5 video element that will create the background video on the section -->
-            <video width="320" height="240" controls>
+            <video width="420" height="240" controls>
                 <source src="resources/backs/VID-20211213-WA0005.mp4" type="video/mp4">
                 <p>Your Browsers doesn't support this video</p>
             </video>
@@ -329,7 +110,7 @@ html {
         <section class="royalInfo">
             <div class="royalLeft">
                   <h1>What is Mobile Royal?</h1>
-                  <p>We've built a plaform to explore next-gen NFT's</p>
+                  <p style="font-style: italic;">We've built a plaform to explore next-gen NFT's</p>
                   <p style="margin-top: 20px; font-weight: bolder;">While exisiting solutions offer to solve just one problem at a time, our team is up to build a 
                       secure, useful, & easy-tp-use product based on private blockhain. It will include easy cryptocurrency
                       payments integration, and even a digital arbitration system
@@ -385,20 +166,20 @@ html {
                             As an outsider, Aoi's actions are under constant scrutiny. However, her respectful behavior and good manners soon had locals observing her out of curiosity instead. It is rumored that, after defending a village from a group of bandits, she refused the reward offered by the villagers, and only took a few foodstuffs. While her intentions remain a mystery, many have speculated that she is looking for a worthy leader to serve. 
                         </p>
                         <div class="active">
-                            <div>Active Skills</div>
+                            <div class="activeTitle">Active Skills</div>
                             <div class="activeInner">
                                 <div class="skills">
                                     <div>Shiraha Slice (Army Skill)</div>
                                     <div>Deal DMG to target equal to 105/110/120/140/200% of Brigade ATK.</div>
                                 </div>
                                 <div class="skills">
-                                    <div>Iaido Dance (Combat Skill)</div>
+                                    <div>Iaido Dance (Combat Skill)</div><br/>
                                     <div>Causes 32% of physical DMG, with a 35/40/45/50/60% chance of stunning targets for 2.5 seconds.</div>
                                 </div>
                             </div>
                         </div>
                         <div class="passive">
-                            <div>Passive Skills</div>
+                            <div class="passiveTitle">Passive Skills</div>
                             <div class="passiveInner">
                                 <div class="skills">
                                     <div>Barrage (Hero: permanent)</div>
@@ -409,7 +190,7 @@ html {
                                     <div>Barracks training SPD up by 2/4/6/10/20%.</div>
                                 </div>
                                 <div class="skills">
-                                    <div>Armored Army (Commander: conditional)</div>
+                                    <div>Armored Army (Commander: conditional)</div><br/>
                                     <div>Increase army DEF by 1.25/2.5/5/10/25%. Effect activated when player initiates an attack or defense.</div>
                                 </div>
                                 <div class="skills">
@@ -434,20 +215,20 @@ html {
                             ”Gargantor, the king of Anthropos, has never known a day's peace. He was born in a kingdom that suffered daily from war, raids, and rebellion. Faced with danger on all sides, Gargantor quickly learned the value of loyalty. Gargantor chose to wield a shield, to symbolize his determination to defend Anthropos. In the hands of Gargantor, the shield was a deadly weapon. His unique combat style and iron will allowed him to quell the rebellion, expel invaders, and secure the throne. After witnessing him in action, many took to calling him "Metal King".”
                         </p>
                         <div class="active">
-                            <div>Active Skills</div>
+                            <div class="activeTitle">Active Skills</div>
                             <div class="activeInner">
                                 <div class="skills">
                                     <div>Iron Bash (Army Skill)</div>
                                     <div> Deal DMG to target equal to 105/110/120/140/200% of Brigade ATK.</div>
                                 </div>
                                 <div class="skills">
-                                    <div>Shield Smash (Combat Skill)</div>
-                                    <div>Split the giant shield in half, and swing <br/>them to the right and left, before <br/>smashing them into the ground to generate a massive force wave. Each hit deals 22% physical DMG, and increases Hero’s physical DEF by 35/40/45/50/70%.</div>
+                                    <div>Shield Smash (Combat Skill)</div><br/>
+                                    <div> Each hit deals 22% physical DMG, and increases Hero’s physical DEF by 35/40/45/50/70%.</div>
                                 </div>
                             </div>
                         </div>
                         <div class="passive">
-                            <div>Passive Skills</div>
+                            <div class="passiveTitle">Passive Skills</div>
                             <div class="passiveInner">
                                 <div class="skills">
                                     <div>Bastille (Hero: permanent)</div>
@@ -458,12 +239,12 @@ html {
                                     <div>Construction SPD up by 2/4/6/10/20%</div>
                                 </div>
                                 <div class="skills">
-                                    <div>Increase Infantry Brigades (Admin: permanent)</div>
+                                    <div>Increase Infantry Brigades (Admin: permanent)</div><br/>
                                     <div>Increase Infantry Brigades deployed by 1/2/3/4/6</div>
                                 </div>
                                 <div class="skills">
-                                    <div>Armoured Infantry (Commander: conditional)</div>
-                                    <div>Increase Infantry DEF by 2.5/5/10/20/50%; effect activated when player initiates an attack or defense.</div>
+                                    <div>Armoured Infantry (Commander: conditional)</div><br/>
+                                    <div>Increase Infantry DEF by 2.5/5/10/20/50%; </div>
                                 </div>
                             </div>
                         </div>
@@ -482,20 +263,20 @@ html {
                             Most would agree that Reginald led a "charmed life". Born into the royal family of Kingsdor, Reginald enjoyed a peaceful childhood a lavish castle. He read about wars that were fought before he was born, and studied under the best tutors in the country. Reginald's life was turned upside down when the king died. His family not only refused to acknowledge him as heir to the throne, but also accused him of killing his own father. When the scandalous news spread to the public, it sparked anger and unrest. With Kingsdor entering into an era of political strife and unrest, Reginald must show that he is the rightful heir of Kingsdor!77
                         </p>
                         <div class="active">
-                            <div>Active Skills</div>
+                            <div class="activeTitle">Active Skills</div>
                             <div class="activeInner">
                                 <div class="skills">
                                     <div>Lancelot (Army Skill)</div>
                                     <div>Deal DMG to target equal to 105/110/120/140/200% of Brigade ATK.</div>
                                 </div>
                                 <div class="skills">
-                                    <div>Kingsdor Strikes (Combat Skill)</div>
-                                    <div>Reginald teams up with the unicorn to unleash a lance attack, dealing 50/100/150/200/300% more skill damage, and 4 lightning-quick strikes. Each strike deals 20% physical DMG.</div>
+                                    <div>Kingsdor Strikes (Combat Skill)</div><br/>
+                                    <div style="text-align: center;"> 4 lightning-quick strikes. Each strike deals 20% physical DMG.</div>
                                 </div>
                             </div>
                         </div>
                         <div class="passive">
-                            <div>Passive Skills</div>
+                            <div class="passiveTitle">Passive Skills</div>
                             <div class="passiveInner">
                                 <div class="skills">
                                     <div>Fortitude (Hero: permanent)</div>
@@ -510,8 +291,8 @@ html {
                                     <div>Hero DEF up by 1.5/3/6/12/30%.</div>
                                 </div>
                                 <div class="skills">
-                                    <div>Deadly Cavalry (Hero: conditional)</div>
-                                    <div>Increase Cavalry ATK by 3/6/12/24/60%; Effect is activated when player initiates an attack or defense.</div>
+                                    <div>Deadly Cavalry (Hero: conditional)</div><br/>
+                                    <div>Increase Cavalry ATK by 3/6/12/24/60%;</div>
                                 </div>
                             </div>
                         </div>
@@ -530,20 +311,20 @@ html {
                             ”Known as "The Beastkin that slew death", Skullrock is a legendary figure in Vollandia, rumored to be invincible.Skullrock had always claimed that fighting was the one thing that made him feel alive. It was said that he died of exhaustion fighting over a thousand elves by himself, his body no longer able to keep up with his desire for blood.By some dark magic, Skullrock was resurrected. As he qot up from the blood-soaked ground, only thoughts of battle filled his mind.Every once in a while, images of life pierce through the red mist in his mind. Memories that were once dismissed as mundane and insipid now cause great confusion. Has life alwavs been more than battle?”
                         </p>
                         <div class="active">
-                            <div>Active Skills</div>
+                            <div class="activeTitle">Active Skills</div>
                             <div class="activeInner">
                                 <div class="skills">
                                     <div>Bladestorm (Army Skill)</div>
                                     <div>Deal DMG to target equal to 105/110/120/140/200% of Brigade ATK.</div>
                                 </div>
                                 <div class="skills">
-                                    <div>Draconic Whirl (Combat Skill)</div>
+                                    <div>Draconic Whirl (Combat Skill)</div><br/>
                                     <div>Skill DMG increase by 10/12/14/16/20%. for every 10% HP lost.</div>
                                 </div>
                             </div>
                         </div>
                         <div class="passive">
-                            <div>Passive Skills</div>
+                            <div class="passiveTitle">Passive Skills</div>
                             <div class="passiveInner">
                                 <div class="skills">
                                     <div>Barrage (Hero: permanent)</div>
@@ -555,10 +336,10 @@ html {
                                 </div>
                                 <div class="skills">
                                     <div>Drill Sergeant (Admin: permanent)</div>
-                                    <div>Barracks training SPD up by 2/4/6/10/20%.</div>
+                                    <div>Barracks training SPD up by 2/4/6/10/20%.</div>
                                 </div>
                                 <div class="skills">
-                                    <div>Deadly Army (Commander: conditional)</div>
+                                    <div>Deadly Army (Commander: conditional)</div><br/>
                                     <div>Increase army ATK by 1/2/4/8/20%. Effect activated when player initiates an attack or defense.</div>
                                 </div>
                             </div>
@@ -578,20 +359,20 @@ html {
                             “Once upon a time, the elves controlled a vast empire that spanned the continent. The elves lived in luxury, drawing all their energy from the Eternal Crystal, a boundless well of power. But an unfortunate accident shattered the Eternal Crystal, resulting in a bitter civil war. The elves splintered into two tribes, the Sunsinger warriors and the Moonseeker mages. The Sunsingers trained Blademasters to counter the powerful mages. Elves like Valenia, who were very sensitive to magic, were recruited from young and schooled in anti-magic arts. After a lifetime of indoctrination, Valenia firmly believed that all mages were evil, and had to be put down like the dangerous animals they were.”
                         </div>
                         <div class="active">
-                            <div>Active Skills</div>
+                            <div class="activeTitle">Active Skills</div>
                             <div class="activeInner">
                                 <div class="skills">
                                     <div>Flash Slash (Army Skill)</div>
                                     <div>Deal DMG to target equal to 105/110/120/140/200% of Brigade ATK.</div>
                                 </div>
                                 <div class="skills">
-                                    <div>Shadow Slash (Combat Skill)</div>
-                                    <div>Rush towards the target and unleash an X slash that deals 53% physical DMG, and then return to original spot. If target’s HP is below 40%, Hero deals 50/60/70/90/120% more skill DMG.</div>
+                                    <div>Shadow Slash (Combat Skill)</div><br/>
+                                    <div>Deals 53% physical DMG, and then return to original spot. If target’s HP is below 40%, Hero deals 50/60/70/90/120% more skill DMG.</div>
                                 </div>
                             </div>
                         </div>
                         <div class="passive">
-                            <div>Passive Skills</div>
+                            <div class="passiveTitle">Passive Skills</div>
                             <div class="passiveInner">
                                 <div class="skills">
                                     <div>Barrage (Hero: permanent)</div>
@@ -606,7 +387,7 @@ html {
                                     <div>Construction SPD up by 2/4/6/10%..</div>
                                 </div>
                                 <div class="skills">
-                                    <div>Field Marshal (Hero: conditional)</div>
+                                    <div>Field Marshal (Hero: conditional)</div><br/>
                                     <div>Increase Training Facility capacity by 0.5/1/1.5/2.5/5%.</div>
                                 </div>
                             </div>
@@ -618,9 +399,7 @@ html {
     </div>
 
     <div class="tok" style="display: flex; flex-direction: column; justify-content: center; align-items: center; width:100%;">
-        <div class="title">
-            <h1>Tokenomics</h1>
-        </div>
+        
         <div class="contentContainer" style="width: 100%;">
             <h1>Tokenomics distribution</h1>
 
@@ -629,16 +408,16 @@ html {
 
             <div id="legenda">
                 <div class="entry">
-                <div id="color-brown" class="entry-color"></div>
-                <div class="entry-text">Play To Earn: 47.25%</div>
+                <div id="color-black" class="entry-color"></div>
+                <div class="entry-text">Marketing: 4.75%</div>
                 </div>
                 <div class="entry">
                 <div id="color-blue" class="entry-color"></div>
-                <div class="entry-text">Liquidity: 15.50%</div>
+                <div class="entry-text">Community Incentive: 6.5%</div>
                 </div>
                 <div class="entry">
                 <div id="color-green" class="entry-color"></div>
-                <div class="entry-text">Marketing: 4.75%</div>
+                <div class="entry-text">Pre Sale: 11%</div>
                 </div>
                 <div class="entry">
                 <div id="color-yellow" class="entry-color"></div>
@@ -646,11 +425,11 @@ html {
                 </div>
                 <div class="entry">
                 <div id="color-orange" class="entry-color"></div>
-                <div class="entry-text">Community Incentive: 6.5%</div>
+                <div class="entry-text">Liquidity: 15.50%</div>
                 </div>
                 <div class="entry">
                 <div id="color-red" class="entry-color"></div>
-                <div class="entry-text">Pre Sale: 11%</div>
+                <div class="entry-text">Play To Earn: 47.25%</div>
                 </div>
             </div>
             </div>
@@ -737,8 +516,8 @@ html {
 
     <section class="roadmap">
         <div class="roadmapTitle">
-            <p>ROADMAP</p>
-            <span>ROYAL brings traditional game experiences, play to earn and Defi to NFT collectibles.</span>
+            <p> OUR ROADMAP</p>
+            <!--<span>ROYAL brings traditional game experiences, play to earn and Defi to NFT collectibles.</span>-->
         </div>
         <div class="roadmapCon">
             <div class="timeline">
@@ -788,13 +567,13 @@ html {
                     <img src="images/partners/OIP.jpg" style="width: 170px; height: 170px; border-radius:50%;" />
                 </div>
                 <div class="partCont">
-                    <img src="images/partners/p7.jpeg" />
+                    <img src="images/partners/p7.jpeg"  style="width: 170px; height: 170px; border-radius:50%;" />
                 </div>
                 <div class="partCont">
-                    <img src="images/partners/R.jpg" />
+                    <img src="images/partners/R.jpg"  style="width: 170px; height: 170px; border-radius:50%;"  />
                 </div>
                 <div class="partCont">
-                    <img src="images/partners/p3.png" />
+                    <img src="images/partners//0de4af_a566d8cc208542b4811348e8fa871704_mv2.png" />
                 </div>
             </div>
             <div class="row2">
@@ -817,7 +596,7 @@ html {
     <section class="faqSec" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
         <div class="title">
             <h4>
-                FAQs
+                FAQs<br/>
                 This section includes answers to frequently asked questions concerning Mobile ROYAL
             </h4>
         </div>
@@ -938,7 +717,9 @@ html {
         </div>
         <div class="footerRight">
             <p>Cyber Battle is an ultimate real-time strategy game packed with an intense and immersive gaming experience where players or members of the game’s community can earn tokens through skilled gameplay.</p>
-            <span>Learn To Play</span>
+            <span>
+                <a href="about.html">Learn More</a>
+            </span>
         </div>
     </footer>
    

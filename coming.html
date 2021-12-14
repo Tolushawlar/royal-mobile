@@ -9,56 +9,32 @@
     <title> Mobile Royale</title>
 </head>
 <link rel="stylesheet" id="google-fonts-1-css" href="https://fonts.googleapis.com/css?family=Play%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7COxanium%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CTomorrow%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=auto&amp;ver=5.8.2" type="text/css" media="all">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap" rel="stylesheet">
+
 <style>
-    .ryl{
-        background-image: url('resources/backs/[GetPaidStock.com]-61b6f2d1436dd.jpg');
-        object-fit: cover;
-        background-attachment: fixed;
-        background-size: cover;
-        display: flex;
+    .coming{
+        width: 90vw;
+        height:70vh;
+        display:flex;
         flex-direction: column;
-        text-align: center;
-        align-items: center;
         justify-content: center;
-        color: goldenrod !important;
-        font-family: "Poppins";
-    }
-
-    .ryl .tokCon{
-        display: flex;
-        flex-direction:row;
-        color: goldenrod !important;
-    }
-
-    .ryl .tokCon .row{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
         align-items: center;
-        font-size: 14px;
-        color: #fff;
-        padding: 30px;
     }
 
-    .ryl .title{
-        margin-bottom: 50px;
-        color: #fff;
-        font-weight: bolder;
-        font-size: 20px;
+    .coming p{
+        color: goldenrod;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "Poppins";
+        font-size: 16px;
     }
-
-    .ryl img:hover{
-        transform: scale(1.5);
-        transition: transform 5s ease-in-out;
-      }
-    
-
 </style>
-
-<body style="overflow-x: hidden">
-    <header class="header" style="width: 100%;">
-        <nav class="navbar" >
-            <a href="home.html" class="nav-logo">
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo">
                 <img src="images/icons/logo.png"   alt=""headerImg" />
             </a>
             <ul class="nav-menu">
@@ -69,7 +45,7 @@
                     <a href="#" class="nav-link">NFT Access</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Whitepaper</a>
+                    <a href="token.html" class="nav-link">RYL Token</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">Partner</a>
@@ -86,17 +62,26 @@
                 <li class="nav-item ring">
                     <div class="icons">
                         <div class="sociaIcon">
-                            <img src="images/icons/IMG-20211206-WA0047.jpg" alt="icon"/>
+                            <a href="">
+                                <img src="images/icons/IMG-20211206-WA0047.jpg" alt="icon"/>
+                            </a>
                         </div>
                         <div class="sociaIcon">
-                            <img src="images/icons/IMG-20211206-WA0048.jpg" alt="icon"/>
+                            <a href="https://mobile.twitter.com/royale_NFTS?t=fDbtnZR7bjnqbr8v-xzEcA&s=08">
+                                <img src="images/icons/IMG-20211206-WA0048.jpg" alt="icon"/>
+                            </a>
                         </div>
                         <div class="sociaIcon">
-                            <img src="images/icons/IMG-20211206-WA0049.jpg" alt="icon"/>
+                            <a href="https://youtube.com/channel/UCbaM3zENJwkjhHpfdVfM_3Q">
+                                <img src="images/icons/IMG-20211206-WA0049.jpg" alt="icon"/>
+                            </a>
                         </div>
                         <div class="sociaIcon">
-                            <img src="images/icons/IMG-20211206-WA0050.jpg" alt="icon"/>
+                            <a href="">
+                                <img src="images/icons/IMG-20211206-WA0050.jpg" alt="icon"/>
+                            </a>
                         </div>
+
                     </div>
                 </li>
             </ul>
@@ -108,36 +93,12 @@
         </nav>
     </header>
 
-        <div class="ryl" style="width: 100vw; height:80vh; overflow: hidden; color: goldenrod !important;">
-        <h2 class="title">Token Functionality</h2>
-        <div class="tokCon">
-            <div class="row">
-                <div class="item">
-                    <h2>Purchase Game Items</h2>
-                    <p>ROYAL can be used to purchase in-game assets,Such as palaces, castles, military equipment and weapons</p>
-                </div>
-                <div class="">
-                    <h2>Play to earn</h2>
-                    <p>Users can earn ROYAL tokens through participation in different in-game events, such as competitions</p></p>
-                </div>
-            </div>
-            <div class="row">
-                <img src="images/nft/Reginald.png" alt="ryl" style="width: 300px; height: 300px;"/>
-            </div>
-            <div class="row">
-                <div class="">
-                    <h2>Staking Rewards</h2>
-                    <p>ROYAL token can be used in the system to earn staking rewards.  It is designed to encourage users to hold tokens and support the ecosystem.</p>
-                </div>
-                <div class="row">
-                    <h2>Governance</h2>
-                    <p>Token holders could participate in the decentralized governance process that decides on the use of revenues, game development and growth.</p>
-                </div>
-            </div>
-        </div>
+    <div class="coming">
+        <p>We Are Working On this</p>
+        <p>Coming Soon!!!</p>
     </div>
 
-    <footer  style="width: 100vw; background-size: 100vw;">
+    <footer>
         <div class="footerLeft">
             <a href="#" class="nav-logo">
                 <img src="images/icons/logo.png"   alt=""headerImg" />
@@ -162,7 +123,9 @@
         </div>
         <div class="footerRight">
             <p>Cyber Battle is an ultimate real-time strategy game packed with an intense and immersive gaming experience where players or members of the game’s community can earn tokens through skilled gameplay.</p>
-            <span>Learn To Play</span>
+            <span>
+                <a href="about.html">Learn More</a>
+            </span>
         </div>
     </footer>
    

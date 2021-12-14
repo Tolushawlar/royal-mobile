@@ -7,8 +7,8 @@
     //I'm adding this section so I don't have to keep updating this pen every year :-)
     //remove this if you don't need it
     let today = new Date(),
-        dd = String(today.getDate()).padStart(2, "0"),
-        mm = String(today.getMonth() + 1).padStart(2, "0"),
+        dd = String(90),
+        mm = String(12),
         yyyy = today.getFullYear(),
         nextYear = yyyy + 1,
         dayMonth = "09/30/",

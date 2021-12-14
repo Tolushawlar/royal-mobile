@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+@font-face {
+  font-family: "Lato";
+  src: url("fonts/Lato/Lato-Regular.ttf");
+}
 
+@font-face {
+  font-family: "LatoItalic";
+  src: url("fonts/Lato/Lato-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/Poppins/Poppins-Bold.ttf");
+}
 * {
     margin: 0;
     padding: 0;
@@ -18,12 +31,13 @@ li {
 
 a {
     text-decoration: none;
+    color: #fff;
 }
 
 .header{
     /*border-bottom: 1px solid #E2E8F0;*/
     padding: 5px;
-    background-image: url('images/backgrounds/back1.jpeg');
+    background-image: url('resources/backs/[GetPaidStock.com]-61b6ed7dafaf5.jpg');
     object-fit: cover;
     background-size: 1350px;
     border-bottom: 3px solid black;
@@ -77,10 +91,14 @@ a {
     font-size: 16px;
     font-weight: 600;
     color: white;
-    font-family: "Tomorrow",sans-serif;
+    font-family: "Lato";
     text-transform: capitalize;
     z-index: 9999;
 
+}
+
+.nav-link:hover{
+  color: goldenrod !important;
 }
 
 .nav-link:hover{
@@ -141,6 +159,7 @@ a {
     background-color: black;
     height: 75vh;
     min-height: 25rem;
+    font-family: "Poppins";
     width: 100%;
     overflow: hidden;
   }
@@ -190,6 +209,7 @@ a {
     display: flex;
     flex-direction: row;
     text-align: center;
+    justify-content: center;
 }
 
 .overBtn .btn1{
@@ -197,14 +217,25 @@ a {
     width: 200px;
     margin-left: 20px;
     font-size: 16px;
-    padding: 20px;
-    padding-bottom: 14px;
+    padding: 13px;
     border-radius: 25px;
     text-align: center;
     height: 50px;
     margin-top: 65px;
     align-items: center;
     cursor: pointer;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.overBtn .btn2:hover{
+  transform: scale(1.1);
+  transition: transform .9s ease-in-out;
+}
+
+.overBtn .btn1:hover{
+  transform: scale(1.1);
+  transition: transform .9s ease-in-out;
 }
 
 .overBtn .btn2{
@@ -212,8 +243,9 @@ a {
     width: 200px;
     margin-left: 20px;
     font-size: 16px;
-    padding: 20px;
-    padding-bottom: 14px;
+    padding: 13px;
+    color: goldenrod !important;
+    font-weight: bolder;
     border-radius: 25px;
     text-align: center;
     height: 50px;
@@ -223,21 +255,26 @@ a {
 }
 
 .royalWrap{
-    background-image: url('images/backgrounds/back4.jpeg');
+    background-image: url('resources/backs/[GetPaidStock.com]-61b6f2d1436dd.jpg');
+    color: goldenrod !important;
+    font-weight: bolder;
     background-size:100vw;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     border-top: 2px solid black;
-    font-family: "Play",sans-serif;
-    
+    font-family: "Poppins",sans-serif;
 }
 
 .royalInfo{
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding:50px;
+    padding:10px;
     justify-content: space-between;
+}
+
+.royalWrap p{
+  font-size:14px;
+
 }
 
 .royalInfo .royalLeft{
@@ -266,7 +303,7 @@ a {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding:50px;
+    padding:10px;
 }
 
 .about .aboutLeft{
@@ -274,7 +311,7 @@ a {
     flex-direction: column;
     width: 800px;
     text-align: center;
-    line-height: 25px;
+    line-height: 20px;
     font-size: 12px;
     padding: 25px;
     font-weight: bolder;
@@ -287,7 +324,8 @@ a {
     justify-content: space-between;
     width: 700px;
     text-align: center;
-    color: #fff;
+    color: goldenrod !important;
+    font-weight: bolder;
     text-transform: uppercase;
     font-weight: bolder;
 }
@@ -308,127 +346,8 @@ a {
 
 
 
-.blurred {
-    background-image: url('images/backgrounds/back1.jpeg');
-    object-fit: cover;
-    background-attachment: fixed;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 60vh;
-  }
-  
-  .glass {
-    position: relative;
-    background: inherit;
-    overflow: hidden;
-    width: 50%;
-    height: 50%;
-    border-radius: 16px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 
-                0 6px 20px rgba(0, 0, 0, 0.15);
-    z-index: 1;
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .glass:before {
-    content: '';
-    position: absolute;
-    background: inherit;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: -20px;
-    box-shadow: inset 0 0 500px rgba(255, 255, 255, .4); 
-    filter: blur(10px);
-    z-index: -1;
-  }
-
-
-.features{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-image: url('images/backgrounds/back4.jpeg');
-    background-size:100vw;
-    background-repeat: space;
-    background-attachment: fixed;
-    border-top: 2px solid black;
-    font-family: "Play",sans-serif;
-    height: 800px;
-}
-
-.features .featureTitle{
-  font-size: 20px;
-  text-align: center;
-  font-weight: bolder;
-  color: #fff;
-}
-
-.featureCat{
-    display: flex;
-    flex-direction: column;
-    margin:10px;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.featureCat1, .featureCat2{
-    display: flex;
-    flex-direction: row;
-    
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.cat{
-    width: 300px;
-    height: 300px;
-    padding: 10px;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    background-color: grey;
-    border: 1px solid rgb(76, 94, 94);
-    box-shadow: 6px 4px rgb(76, 94, 94);;
-}
-
-.cat p{
-  color: #fff;
-  font-weight: bold;
-  font-size: 15px;
-}
-
-.cat img{
-    width: 230px;
-    height: 230px;
-}
-
-.innerCat{
-  background-color:  rgb(76, 94, 94);;
-  width:250px;
-  padding: 5px;
-}
-
-
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500);
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
-*, *:before, *:after {
-  box-sizing: border-box;
-}
-
-
 .slider {
-  background: url('images/backgrounds/back3.jpeg') no-repeat;
+  background: url('resources/backs/[GetPaidStock.com]-61b6ed7dafaf5.jpg') no-repeat;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -561,20 +480,29 @@ a {
   width: 500px;
   height: 500px;
 }
+
+.slider__contents img:hover{
+  transform: scale(1.5);
+  transition: transform 5s ease-in-out;
+}
+
 .slider__caption {
   font-weight: 500;
+  font-family: 'Corinthia', cursive;
   margin: 2rem 0 1rem;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   text-transform: uppercase;
+  color: goldenrod !important;
   font-style: italic;
   font-size: 30px;
   color: #fff;
 }
 .slider__txt {
   color: #fff;
+  font-family: cursive;
   font-size: 12px;
   font-weight: bolder;
-  width: 900px;
+  width: 1800px;
   margin-bottom: 3rem;
   max-width: 300px;
 }
@@ -592,6 +520,16 @@ a {
     text-align: center;
     color: #fff;
     font-size: 12px;
+}
+
+.activeTitle{
+  color: goldenrod !important;
+  font-family: 'Poppins';
+}
+
+.passiveTitle{
+  color: goldenrod !important;
+  font-family: 'Poppins';
 }
 
 .slider__skills .active .activeInner{
@@ -614,14 +552,234 @@ a {
 
 
 .skills{
-    margin: 20px;
+    margin: 15px;
     display: flex;
+    width: 150px;
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
     line-height: 15px;
 }
 
+.tok{
+  background-image: url('resources/backs/[GetPaidStock.com]-61b6f2d1436dd.jpg');
+  object-fit: cover;
+  background-size: cover;
+}
+.contentContainer {
+  background-image: url('resources/backs/[GetPaidStock.com]-61b6f2d1436dd.jpg');
+  color: goldenrod !important;
+  padding:20px;
+  max-width:350px;
+  min-width:150px;
+  margin:15vh auto;
+  border-radius:10px;
+  border:solid 5px #dbdbdb;
+}
+
+#my-pie-chart-container {
+  display: flex;
+  align-items: center;
+}
+
+#my-pie-chart {
+  background: conic-gradient(brown 0.00%, black 0.00% 0.55%, blue 0.55% 6.08%, green 6.08% 13.68%, yellow 13.68% 23.27%, orange 23.27% 40.47%, red 40.47%);
+  border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+#legenda {
+  margin-left: 20px;
+  background-color: white;
+  padding: 5px;
+  color: black;
+  font-size: 10px;
+}
+
+.entry {
+  display: flex;
+  align-items: center;
+}
+
+.entry-color {
+    height: 10px;
+    width: 10px;
+}
+
+.entry-text {
+  margin-left: 2px;
+}
+
+#color-red {
+  background-color: red;
+}
+
+#color-orange {
+  background-color: orange;
+}
+
+#color-yellow {
+  background-color: yellow;
+}
+
+#color-green {
+  background-color: green;
+}
+
+#color-blue {
+  background-color: blue;
+}
+
+#color-black {
+  background-color: black;
+}
+
+#color-brown {
+  background-color: brown;
+}
+
+html{
+  background-image: url('images/backgrounds/back4.jpeg');
+  background-size:100vw;
+  background-repeat: space;
+  background-attachment: fixed;
+}
+
+.features{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-image: url('images/backgrounds/back4.jpeg');
+    background-size:100vw;
+    background-repeat: space;
+    background-attachment: fixed;
+    border-top: 2px solid black;
+    font-family: "Play",sans-serif;
+    height: 800px;
+}
+
+.features .featureTitle{
+  font-size: 20px;
+  text-align: center;
+  font-weight: bolder;
+  color: #fff;
+}
+
+.featureCat{
+    display: flex;
+    flex-direction: column;
+    margin:10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.featureCat1, .featureCat2{
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.cat{
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Helvetica, sans-serif;
+    background: url('images/backgrounds/roadmap.jpeg');
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid rgb(76, 94, 94);
+    box-shadow: 6px 4px rgb(76, 94, 94);
+    font-family: "Poppins";
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.cat:hover{
+  box-shadow: 0 2px 6px 0 rgba(47,83,151,0.40); 
+    color: goldenrod !important;
+    transition: all 500ms ease-in-out;
+}
+
+.cat img:hover{
+  transform: scale(1.2);
+  transition: transform 5s ease-in-out;
+}
+
+.cat p{
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.cat img{
+    width: 230px;
+    height: 230px;
+}
+
+.innerCat{
+  background-color:  rgb(76, 94, 94);;
+  width:280px;
+  padding: 5px;
+  color: goldenrod !important;
+  border-radius: 50px;
+    margin-bottom: 120px;
+}
+
+
+
+
+.blurred {
+  margin-top: 90px;
+  background-image: url('images/backgrounds/back1.jpeg');
+  object-fit: cover;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+}
+
+.glass {
+  position: relative;
+  background: inherit;
+  overflow: hidden;
+  width: 50%;
+  height: 50%;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 
+              0 6px 20px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+
+.glass:before {
+  content: '';
+  position: absolute;
+  background: inherit;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: -20px;
+  box-shadow: inset 0 0 500px rgba(255, 255, 255, .4); 
+  filter: blur(10px);
+  z-index: -1;
+}
 
 
 .counter .container {
@@ -660,157 +818,10 @@ a {
   }
   
 
-  @media all and (max-width: 768px) {
-    h1 {
-      font-size: calc(1.5rem * var(--smaller));
-    }
-    
-    li {
-      font-size: calc(1.125rem * var(--smaller));
-    }
-    
-    li span {
-      font-size: calc(3.375rem * var(--smaller));
-    }
-  }
-
-  .partners{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: url('resources/backs/[GetPaidStock.com]-61b6ed7dafaf5.jpg') no-repeat;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    align-items: center;
-    padding: 20px;
-    
-  }
-
-  .partners .title{
-    font-size: 20px;
-    margin: 10px;
-    color: #fff;
-  }
-  .PartnersContent{
-    display:flex;
-    flex-direction: column;
-  }
-
-  .row1, .row2{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .row1 img{
-    width: 200px;
-    height: 200px;
-  } 
-  
-  .row2 img{
-    width: 200px;
-    height: 200px;
-  }
-
-  .partCont{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    border-radius: 50%;
-    margin: 10px;
-  }
-
-
-
-  footer{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    background-image: url('images/backgrounds/back1.jpeg');
-    object-fit: cover;
-    background-size: 1350px;
-    border-bottom: 3px solid black;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: #fff;
-    font-size: 10px;
-    text-align: center;
-
-}
-
-.footerLeft{
-    display: flex;
-    flex-direction: column !important;
-    align-items: center;
-    text-align: center;
-    line-height: 15px;
-}
-
-.footerLeft img{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-}
-
-.footerLeft{
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-}
-
-.footerCenter{
-    display: flex;
-    flex-direction: row;
-}
-
-.footerCenter .sociaIcon{
-    background-image: url('images/iconRing.png');
-    background-size: 50px;
-    background-repeat: no-repeat;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    width: 50px;
-}
-
-.footerCenter .sociaIcon img{
-  height: 28px;
-  margin-top: 5px;
-  width: 28px;
-  border-radius: 50%;
-}
-
-
-.footerRight{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.footerRight span{
-    margin-top: 10px;
-    width: 100px;
-    padding: 10px;
-    height: 30px;
-    text-align: center;
-    background-color: red;
-    border: 1px solid cyan;
-    border-radius: 25px;
-}
-
-
-
   .roadmap {
     background-color: #474e5d;
     font-family: Helvetica, sans-serif;
-    background: url('images/backgrounds/back4.jpeg');
+    background: url('resources/backs/[GetPaidStock.com]-61b6eee5ee7fa.jpg');
     color: white;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -818,6 +829,8 @@ a {
     background-color: #999;
     display: flex;
     flex-direction: column;
+    font-weight: bolder;
+    font-family: "Poppins";
     align-items: center;
     justify-content: space-between;
     padding: 20px;
@@ -980,21 +993,245 @@ a {
   /* The actual content */
   
   .content {
-  
+    color: #fff;
+    font-size: 10px;
     padding: 20px 30px;
     font-weight: bolder;
     position: relative;
     line-height: 20px;
     border-radius: 6px;
-    background-image: url('images/backgrounds/roadmap.jpeg');
+    background-image: url('resources/backs/[GetPaidStock.com]-61b6f2d1436dd.jpg');
     object-fit: cover;
     
     
   
   }
+
+
+  .partners{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url('resources/backs/[GetPaidStock.com]-61b6ed7dafaf5.jpg') no-repeat;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    align-items: center;
+    padding: 20px;
+    
+  }
+
+  .partners .title{
+    font-size: 20px;
+    margin: 10px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  .PartnersContent{
+    display:flex;
+    flex-direction: column;
+  }
+
+  .row1, .row2{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .row1 img{
+    width: 200px;
+    height: 200px;
+  } 
+  
+  .row2 img{
+    width: 200px;
+    height: 200px;
+  }
+
+  .partCont{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 50%;
+    margin: 10px;
+  }
+
+  .faqSec{
+    background-image: url('resources/backs/[GetPaidStock.com]-61b6eee5ee7fa.jpg');
+    object-fit: cover;
+    padding: 10px;
+}
+
+.faqSec .title{
+    color: goldenrod;
+    font-weight: bolder;
+    font-family: "Poppins";
+    padding: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.accordion {
+width: 90%;
+max-width: 1000px;
+margin: 2rem auto;
+}
+
+.accordion-item {
+background-color: #fff;
+color: #111;
+margin: 1rem 0;
+font-size:12px;
+padding:10px;
+line-height: 10px;
+font-family: "Poppins";
+border-radius: 0.5rem;
+box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+}
+.accordion-item-header {
+padding: 0.5rem 3rem 0.5rem 1rem;
+min-height: 3.5rem;
+line-height: 1.25rem;
+font-weight: bold;
+display: flex;
+align-items: center;
+position: relative;
+cursor: pointer;
+}
+.accordion-item-header::after {
+content: "\002B";
+font-size: 2rem;
+position: absolute;
+right: 1rem;
+}
+.accordion-item-header.active::after {
+content: "\2212";
+}
+.accordion-item-body {
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.2s ease-out;
+}
+.accordion-item-body-content {
+padding: 1rem;
+line-height: 1.5rem;
+border-top: 1px solid;
+border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+}
+
+  
+
+
+  footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-image: url('resources/backs/[GetPaidStock.com]-61b6ed7dafaf5.jpg');
+    object-fit: cover;
+    background-size: 1350px;
+    border-bottom: 3px solid black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+    font-size: 10px;
+    text-align: center;
+    font-family: "Poppins";
+}
+
+.footerLeft{
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    text-align: center;
+    line-height: 15px;
+}
+
+.footerLeft img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.footerLeft{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.footerCenter{
+    display: flex;
+    flex-direction: row;
+}
+
+.footerCenter .sociaIcon{
+    background-image: url('images/iconRing.png');
+    background-size: 50px;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.footerCenter .sociaIcon img{
+  height: 28px;
+  margin-top: 5px;
+  width: 28px;
+  border-radius: 50%;
+}
+
+
+.footerRight{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footerRight span{
+    margin-top: 10px;
+    cursor: pointer;
+    width: 100px;
+    padding: 6px;
+    height: 30px;
+    text-align: center;
+    background-color: goldenrod;
+    border: 1px solid cyan;
+    border-radius: 25px;
+}
+
+.footerRight span:hover{
+  background-color: transparent;
+}
+
+
+
+  
   
   /* Media queries - Responsive timeline on screens less than 600px wide */
   
+  
+  @media all and (max-width: 768px) {
+    h1 {
+      font-size: calc(1.5rem * var(--smaller));
+    }
+    
+    li {
+      font-size: calc(1.125rem * var(--smaller));
+    }
+    
+    li span {
+      font-size: calc(3.375rem * var(--smaller));
+    }
+  }
+
+
   @media screen and (max-width: 600px) {
   
   /* Place the timelime to the left */

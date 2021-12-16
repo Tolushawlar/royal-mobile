@@ -83,13 +83,12 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 9999;
+    
 
 }
 
 .nav-item {
     margin-left: 5rem;
-    z-index: 9999;
 
 }
 
@@ -171,19 +170,16 @@ a {
   }
   
   .vidSec video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    
     min-width: 100%;
     min-height: 100%;
     width: auto;
     height: auto;
-    z-index: 0;
+    
   }
   
 .vidSec .container {
     position: relative;
-    z-index: 2;
   }
   
 .vidSec .overlay {
@@ -194,7 +190,6 @@ a {
     width: 100%;
     background-color: black;
     opacity: 0.5;
-    z-index: 99999;
     color: red;
     color: #fff;
     font-family: "Play",sans-serif;
@@ -216,6 +211,7 @@ a {
     flex-direction: row;
     text-align: center;
     justify-content: center;
+    z-index: 999;
 }
 
 .overBtn .btn1{
@@ -1248,8 +1244,14 @@ border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
     }
 
     .vidSec .overlay .title{
-      font-size: 24px;
-      margin-bottom: -30px;
+      font-size: 34px;
+      line-height: 60px;
+      margin-top: 10px;
+      color: goldenrod;
+    }
+
+    .overlay .t1{
+      margin-top: 200px !important;
     }
 
     .vidSec .overBtn{
@@ -1257,10 +1259,21 @@ border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
       flex-direction: column;
       text-align: center;
       justify-content: center;
+      padding: -90px;
     }
 
     .vidSec .overBtn .btn2{
       margin-bottom: 200px;
+    }
+
+    .vidSec .overBtn .btn1{
+      margin-bottom: -30px;
+      margin-top: -10px;
+    }
+
+    .royalWrap video{
+      width:95vw !important;
+      border-radius: 50%;
     }
 
     .royalWrap{
@@ -1271,6 +1284,7 @@ border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
       background-size:150vw;
       text-align: center;
       font-size: 12px;
+      width: 100vw;
     }
 
     .royalInfo{
@@ -1279,6 +1293,31 @@ border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
       justify-content: center;
       align-items: center;
     }
+
+    .royalWrap .royalInfo .royalLeft p{
+      font-size: 12px;
+      text-align: center;
+    }
+
+    .royalWrap .royalInfo .royalLeft p{
+      font-size: 12px;
+      text-align: center;
+    }
+
+
+    .aboutLeft p{
+      font-size: 12px;
+      text-align: center;
+    }
+
+
+    .aboutLeft #popText{
+      width: 100vw;
+      margin-left: 185px;
+      text-align: center;
+      padding: 5px;
+    }
+
 
     .about{
       display: flex;
@@ -1295,6 +1334,8 @@ border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
     .slider__contents{
       display: flex;
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 
     .slider__contents .active{
@@ -1311,6 +1352,7 @@ border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
 
   .slider__contents .sliderRight{
       width: 100px;
+      margin-top: 30px;
     }
   
   .slider__contents:nth-child(2) .sliderLeft{
@@ -1335,7 +1377,14 @@ border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
   }
 
 #gan{
-  margin-right: 150px !important;
+  margin-right: 3px !important;
+  width: 300px;
+
+}
+
+#reg{
+  margin-right: -5px !important;
+
 }
 .slider__contents .sliderLeft{
   width: 300px;
@@ -1360,7 +1409,7 @@ border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
     display: flex;
     align-items: center;
     width: 350px;
-    height: 250px;
+    height: 200px;
   }
 
   
@@ -1550,8 +1599,11 @@ border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
         left: -100%;
         top: 5rem;
         flex-direction: column;
-        background-color: #fff;
-        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
+        background-color: goldenrod;
+        width: 64%;
         border-radius: 10px;
         text-align: center;
         transition: 0.3s;
@@ -1565,7 +1617,8 @@ border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
 
     .nav-item {
         margin: 2.5rem 0;
-        z-index: 9999;
+        z-index: 99999;
+        color: black;
 
     }
 

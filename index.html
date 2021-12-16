@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap" rel="stylesheet">
 
-<body>
+<body>  
     <header class="header">
         <nav class="navbar">
             <a href="index.html" class="nav-logo">
@@ -24,7 +24,7 @@
                     <a href="index.html" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">NFT Access</a>
+                    <a href="#" class="nav-link">NFT Heros</a>
                 </li>
                 <li class="nav-item">
                     <a href="token.html" class="nav-link">RYL Token</a>
@@ -80,7 +80,7 @@
 
         <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
         <div class="overlay">
-            <div class="title">
+            <div class="title t1">
                 <p>NFT Gameroyal the next gen gaming & marketplace.</p>
             </div>
             <div class="title">
@@ -99,7 +99,7 @@
         </div>
       
         <!-- The HTML5 video element that will create the background video on the section -->
-            <video width="420" height="240" controls>
+            <video width="1420" autoplay="false" height="540" muted="true">
                 <source src="resources/backs/VID-20211213-WA0005.mp4" type="video/mp4">
                 <p>Your Browsers doesn't support this video</p>
             </video>
@@ -109,20 +109,20 @@
     <div class="royalWrap">
         <section class="royalInfo">
             <div class="royalLeft">
-                  <h1>What is Mobile Royal?</h1>
-                  <p style="font-style: italic;">We've built a plaform to explore next-gen NFT's</p>
-                  <p style="margin-top: 20px; font-weight: bolder;">While exisiting solutions offer to solve just one problem at a time, our team is up to build a 
-                      secure, useful, & easy-tp-use product based on private blockhain. It will include easy cryptocurrency
-                      payments integration, and even a digital arbitration system
+                  <h1 id="popText" >What is Mobile Royal?</h1>
+                  <p id="popText" style="font-style: italic;">We've built a plaform to explore next-gen NFT's</p>
+                  <p id="popText" style="margin-top: 20px; font-weight: bolder;">While exisiting solutions offer to solve just one problem at a time, our team is up to build a 
+                      <br/>secure, useful, & easy-tp-use product based on private blockhain. It will include easy cryptocurrency
+                      <br/>payments integration, and even a digital arbitration system
                   </p>
-                  <p style="margin-top: 20px; font-weight: bolder;">We are creating a platform for gamers & crypto owners to experinec blockchain based NFT gaming with huge marketplace. On Moblie Royal you can buy & sell NFTs.</p>
-                  <p style="margin-top: 20px; font-weight: bolder;">At the end, Our aim is to integrate all companies, employees , and business assets into a
+                  <p id="popText" style="margin-top: 20px; font-weight: bolder;">We are creating a platform for gamers & crypto owners to experinec blockchain based NFT gaming with huge marketplace. On Moblie Royal you can buy & sell NFTs.</p>
+                  <p id="popText" style="margin-top: 20px; font-weight: bolder;">At the end, Our aim is to integrate all companies, employees , and business assets into a
                       unified blockchain ecosystem, which will make business trully efficent, transparent and reliable.
                   </p>
             </div>
             <div class="royalRight">
               <!-- The HTML5 video element that will create the background video on the section -->
-              <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+              <video playsinline="playsinline" autoplay="false" controls loop="loop">
                 <source src="resources/backs/1638180197788.mp4" type="video/mp4">
               </video>
             </div>
@@ -131,9 +131,9 @@
         <section class="about">
               <div class="aboutLeft">
                   <h1>What Is Royal Token?</h1>
-                  <p style="margin-top: 20px; font-weight: bolder;">Mobile Royal is Aa Binance smart chain based NFT gaming platform with marketplace & action.</p>
-                  <p style="margin-top: 20px; font-weight: bolder;">RYT is BEP-20 smart token deployed on Binance Smart Chain</p>
-                  <p style="margin-top: 20px; font-weight: bolder;">Royal Token is a currency based on blockchain that players can earn and become an investor</p>
+                  <p id="popText" style="margin-top: 20px; font-weight: bolder;">Mobile Royal is Aa Binance smart chain based NFT gaming platform with marketplace & action.</p>
+                  <p id="popText" style="margin-top: 20px; font-weight: bolder;">RYT is BEP-20 smart token deployed on Binance Smart Chain</p>
+                  <p id="popText" style="margin-top: 20px; font-weight: bolder;">Royal Token is a currency based on blockchain that <br/>players can earn and become an investor</p>
               </div>
               <div class="aboutRight">
                   <h4 class="frames">Trade NTF items</h4>
@@ -204,7 +204,7 @@
             </div>
             
             <div class="slider__contents">
-                <div class="sliderLeft" >
+                <div class="sliderLeft" id="gan" >
                     <h2 class="slider__caption">Gargantor</h2>
                     <img src="images/nft/Gargantor.png" alt="rep"  />
                     
@@ -251,7 +251,7 @@
                     </span>
                 </div>
             </div>
-            <div class="slider__contents">
+            <div class="slider__contents" id="reg">
                <div class="sliderLeft">
                     <h2 class="slider__caption">Reginald</h2>
                     <img src="images/nft/Reginald.png" alt="rep"  />

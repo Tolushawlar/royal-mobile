@@ -48,7 +48,7 @@
         transform: scale(1.5);
         transition: transform 1s ease-in-out;
       }
-      
+
     .nftList{
         display:flex;
         flex-direction: row;
@@ -116,6 +116,19 @@
         padding: 5px;
         color: black;
         font-weight: bolder;
+    }
+
+    @media all and (max-width: 768px) {
+        .nftList{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nftList .child{
+            width: 250px;
+        }
     }
 
 </style>
@@ -569,7 +582,7 @@
 
     <footer ">
         <div class="footerLeft">
-            <a href="#" class="nav-logo">
+            <a href="index.html" class="x   nav-logo">
                 <img src="images/icons/logo.png"   alt=""headerImg" />
             </a>
             <p>Mobile Royale</p>
@@ -592,7 +605,9 @@
         </div>
         <div class="footerRight">
             <p>Cyber Battle is an ultimate real-time strategy game packed with an intense and immersive gaming experience where players or members of the game’s community can earn tokens through skilled gameplay.</p>
-            <span>Learn To Play</span>
+            <span>
+                <a href="about.html">Learn More</a>
+            </span>
         </div>
     </footer>
    

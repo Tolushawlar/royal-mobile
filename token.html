@@ -42,15 +42,37 @@
 
     .ryl .title{
         margin-bottom: 50px;
-        color: #fff;
+        color: goldenrod;
         font-weight: bolder;
         font-size: 20px;
     }
 
+    .ryl .tokCon .midRow{
+        background: url('images/backgrounds/roadmap.jpeg') no-repeat;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     .ryl img:hover{
         transform: scale(1.5);
         transition: transform 5s ease-in-out;
       }
+
+    @media all and (max-width: 768px) {
+        .ryl .tokCon{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .ryl .tokCon .row{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
     
 
 </style>
@@ -108,7 +130,7 @@
         </nav>
     </header>
 
-        <div class="ryl" style="width: 100vw; height:80vh; overflow: hidden; color: goldenrod !important;">
+    <div class="ryl" style="width: 100vw; height:80vh; overflow: hidden; color: goldenrod !important;">
         <h2 class="title">Token Functionality</h2>
         <div class="tokCon">
             <div class="row">
@@ -116,20 +138,20 @@
                     <h2>Purchase Game Items</h2>
                     <p>ROYAL can be used to purchase in-game assets,Such as palaces, castles, military equipment and weapons</p>
                 </div>
-                <div class="">
+                <div class="item">
                     <h2>Play to earn</h2>
                     <p>Users can earn ROYAL tokens through participation in different in-game events, such as competitions</p></p>
                 </div>
             </div>
-            <div class="row">
+            <div class="row midRow">
                 <img src="images/nft/Reginald.png" alt="ryl" style="width: 300px; height: 300px;"/>
             </div>
             <div class="row">
-                <div class="">
+                <div class="item">
                     <h2>Staking Rewards</h2>
                     <p>ROYAL token can be used in the system to earn staking rewards.  It is designed to encourage users to hold tokens and support the ecosystem.</p>
                 </div>
-                <div class="row">
+                <div class="item">
                     <h2>Governance</h2>
                     <p>Token holders could participate in the decentralized governance process that decides on the use of revenues, game development and growth.</p>
                 </div>
@@ -139,7 +161,7 @@
 
     <footer  style="width: 100vw; background-size: 100vw;">
         <div class="footerLeft">
-            <a href="#" class="nav-logo">
+            <a href="index.html" class="nav-logo">
                 <img src="images/icons/logo.png"   alt=""headerImg" />
             </a>
             <p>Mobile Royale</p>
@@ -162,7 +184,9 @@
         </div>
         <div class="footerRight">
             <p>Cyber Battle is an ultimate real-time strategy game packed with an intense and immersive gaming experience where players or members of the game’s community can earn tokens through skilled gameplay.</p>
-            <span>Learn To Play</span>
+            <span>
+                <a href="about.html">Learn More</a>
+            </span>
         </div>
     </footer>
    

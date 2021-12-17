@@ -178,7 +178,7 @@ a {
     min-height: 100%;
     width: auto;
     height: auto;
-    
+    z-index: -990;
   }
   
 .vidSec .container {
@@ -204,7 +204,8 @@ a {
     justify-content: center;
     align-items: center;
     text-transform: capitalize;
-    padding: 10px;;
+    padding: 10px;
+    z-index: 100;
 }
 .overlay p{
     margin-bottom: 30px;
@@ -214,7 +215,7 @@ a {
     flex-direction: row;
     text-align: center;
     justify-content: center;
-    z-index: 999;
+    z-index: 100;
 }
 
 .overBtn .btn1{
@@ -291,6 +292,10 @@ a {
     font-weight: bolder;
 }
 
+#brake{
+  display: none;
+}
+
 .royalInfo .royalRight{
     width: 500px;
     border-radius: 50%;
@@ -327,7 +332,7 @@ a {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    width: 700px;
+    width: 800px;
     text-align: center;
     color: goldenrod !important;
     font-weight: bolder;
@@ -336,16 +341,19 @@ a {
 }
 
 .about .aboutRight .frames{
-    background-image: url('images/iconRing2.png');
-    background-size: 150px;
+    background-image: url('images/icons/frame.png');
+    background-size: 200px;
     background-repeat: no-repeat;
     text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 150px;
-    width: 150px;
+    height: 120px;
+    font-size: 12px;
+    color: goldenrod;
+    font-weight: bolder;
+    width: 200px;
 }
 
 
@@ -508,6 +516,7 @@ a {
   font-style: italic;
   font-size: 30px;
   color: #fff;
+  
 }
 .slider__txt {
   color: #fff;
@@ -537,6 +546,11 @@ a {
 .activeTitle{
   color: goldenrod !important;
   font-family: 'Poppins';
+  background-image: url('images/icons/frame.png');
+  background-size: 200px;
+  background-repeat: no-repeat;
+  text-align: center;
+  width: 200px;
 }
 
 .passiveTitle{
@@ -597,7 +611,7 @@ a {
 }
 
 #my-pie-chart {
-  background: conic-gradient(pink 0.00% 4.75%, blue 4.75% 8.50%, green 8.08% 13.68%, yellow 13.68% 23.27%, orange 23.27% 40.47%, red 40.47%);
+  background: conic-gradient(pink 0.00% 3.75%, blue 3.75% 8.50%, green 8.08% 15.68%, yellow 15.68% 27.27%, orange 23.27% 40.47%, red 40.47%);
   border-radius: 50%;
   width: 450px;
   height: 350px;
@@ -1253,7 +1267,7 @@ border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
     .vidSec .overlay .title{
       font-size: 34px;
       line-height: 60px;
-      margin-top: 10px;
+      margin-top: -40px;
       color: goldenrod;
     }
 
@@ -1292,6 +1306,7 @@ border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
       text-align: center;
       font-size: 12px;
       width: 100vw;
+      overflow-x: hidden;
     }
 
     .royalInfo{
@@ -1311,12 +1326,30 @@ border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
       text-align: center;
     }
 
+    #brake{
+      display: inline;
+    }
+
 
     .aboutLeft p{
       font-size: 12px;
       text-align: center;
     }
 
+    .royalLeft p{
+      font-size: 12px;
+      text-align: center;
+    }
+
+    .royalLeft{
+      width: 90vw !important;
+      overflow-x: hidden !important ;
+    }
+
+    .aboutLeft{
+      overflow-x: hidden !important ;
+      
+    }
 
     .aboutLeft #popText{
       width: 100vw;

@@ -731,7 +731,7 @@ a {
     align-items: center;
     justify-content: space-between;
     font-family: Helvetica, sans-serif;
-    background: url('images/backgrounds/roadmap.jpeg');
+    background: url('resources/backs/modern-futuristic-sci-fi-background_35913-2152.jpg');
     color: white;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1069,7 +1069,7 @@ a {
     flex-direction: column;
   }
 
-  .row1, .row2{
+  .row1, .row2, .row3{
     display:flex;
     flex-direction: row;
     justify-content: space-between;

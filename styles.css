@@ -1560,7 +1560,7 @@ border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
       height: 300px;
       overflow-x: auto;
       overflow-y: hidden;
-      padding: 60px;
+      padding: 50px;
   }
 
   
@@ -1614,8 +1614,6 @@ border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
       border: medium solid white;
   
       border-width: 10px 10px 10px 0;
-  
-      border-color: $font;
   
     }
   
@@ -1684,7 +1682,6 @@ border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
 
 
 @media only screen and (max-width: 768px) {
-
   header{
     width: 100;
   }

@@ -134,12 +134,12 @@ a {
     align-items: center;
     height: 40px;
     width: 120px;
-    margin-left: 24px;
+    margin-left: 2px;
 }
 
 .nav-item .icons .sociaIcon img{
     height: 28px;
-    margin-top: 5px;
+    margin-top: 10px;
     width: 28px;
     border-radius: 50%;
 }
@@ -484,13 +484,17 @@ a {
 
 .slider__contents .sliderLeft{
     width: 600px;
-    background: url('images/backgrounds/roadmap.jpeg') no-repeat;
+    background: url('resources/backs/abstract-grunge-decorative-relief-navy-blue-stucco-wall-texture-wide-angle-rough-colored-background_1258-28311.jpg') no-repeat;
     border-radius: 50%;
     background-repeat: no-repeat;
-    
     background-size: cover;
     height: 650px;
     
+}
+
+#gan{
+  width: 600px;
+
 }
 
 .slider__contents .sliderRight{
@@ -541,6 +545,8 @@ a {
     text-align: center;
     color: #fff;
     font-size: 12px;
+    font-family: "Poppins";
+
 }
 
 .activeTitle{
@@ -550,7 +556,7 @@ a {
   background-size: 200px;
   background-repeat: no-repeat;
   text-align: center;
-  width: 200px;
+  
 }
 
 .passiveTitle{
@@ -568,6 +574,7 @@ a {
     flex-direction: column;
     text-align: center; 
     color: #fff;
+    font-family: "Poppins";
     font-size: 12px;
 }
 
@@ -595,12 +602,16 @@ a {
 .contentContainer {
   background-image: url('images/backgrounds/back4.jpeg');
   color: goldenrod !important;
-  padding:20px;
+  padding:10px;
   max-width:550px;
   min-width:150px;
   margin:15vh auto;
   border-radius:10px;
   border:solid 5px #dbdbdb;
+}
+
+.contentContainer h1{
+  font-size: 25px !important;
 }
 
 #my-pie-chart-container {
@@ -613,16 +624,16 @@ a {
 #my-pie-chart {
   background: conic-gradient(pink 0.00% 3.75%, blue 3.75% 8.50%, green 8.08% 15.68%, yellow 15.68% 27.27%, orange 23.27% 40.47%, red 40.47%);
   border-radius: 50%;
-  width: 450px;
+  width: 550px;
   height: 350px;
 }
 
 #legenda {
-  margin-left: 10px;
+  margin-right: -70px;
   background-color: white;
   padding: 5px;
   color: black;
-  width: 290px;
+  width: 330px;
   height: 210px;
   font-size: 10px;
 }

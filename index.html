@@ -19,6 +19,19 @@
     header{
         width: 100vw !important;
         overflow-x: hidden !important;
+        z-index:1000 !important; 
+    }
+
+    nav{
+        z-index:100 !important; 
+    }
+
+    .royalWrap #popText{
+        font-size: 16px !important;
+    }
+
+    .skills{
+        font-size: 12px !important;
     }
 
       
@@ -26,8 +39,36 @@
         body, html{
             width: 100vw;
             overflow-x: hidden !important;
+            
+            background-image: url('images/backgrounds/back4.jpeg') !important;
+            background-size:1000vw !important;
+        }
+
+        .features{
+
+            background-image: url('images/backgrounds/back4.jpeg') !important;
+            background-size:1000vw !important;
+            
+        }
+        nav-menu {
+            position: fixed;
+            left: -100%;
+            top: 5rem;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: 0px;
+            background-color: goldenrod;
+            width: 100vw;
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.3s;
+            box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+            z-index: 9999;
         }
   }
+
+  
 </style>
 <body>  
     <header class="header">
@@ -67,6 +108,11 @@
                         <div class="sociaIcon">
                             <a href="https://youtube.com/channel/UCbaM3zENJwkjhHpfdVfM_3Q">
                                 <img src="images/icons/IMG-20211206-WA0049.jpg" alt="icon"/>
+                            </a>
+                        </div>
+                        <div class="sociaIcon">
+                            <a href="https://www.instagram.com/p/CVnu1QKDi_v/?utm_medium=share_sheet">
+                                <img src="images/icons/insta.jpeg" alt="icon"/>
                             </a>
                         </div>
                         <div class="sociaIcon">
@@ -413,31 +459,31 @@
     <div class="tok" style="display: flex; flex-direction: column; justify-content: center; align-items: center; width:100%;">
         
         <div class="contentContainer" style="width: 100%;">
-            <h1 style="text-align: center;">Tokenomics distribution</h1>
+            <h1 style="text-align: center;">Tokenomics Distribution</h1>
 
             <div id="my-pie-chart-container">
             <div id="my-pie-chart"></div>
 
             <div id="legenda">
                 <div class="entry">
-                <div id="color-black" class="entry-color"></div>
-                <div class="entry-text">Marketing: 4.75%</div>
+                    <div id="color-black" class="entry-color"></div>
+                    <div class="entry-text">Marketing: 4.75%</div>
                 </div>
                 <div class="entry">
-                <div id="color-green" class="entry-color"></div>
-                <div class="entry-text">Pre Sale: 11%</div>
+                    <div id="color-green" class="entry-color"></div>
+                    <div class="entry-text">Pre Sale: 11%</div>
                 </div>
                 <div class="entry">
-                <div id="color-yellow" class="entry-color"></div>
-                <div class="entry-text">Team: 15%</div>
+                    <div id="color-yellow" class="entry-color"></div>
+                    <div class="entry-text">Team: 15%</div>
                 </div>
                 <div class="entry">
-                <div id="color-orange" class="entry-color"></div>
-                <div class="entry-text">Liquidity: 15.50%</div>
+                    <div id="color-orange" class="entry-color"></div>
+                    <div class="entry-text">Liquidity: 15.50%</div>
                 </div>
                 <div class="entry">
-                <div id="color-red" class="entry-color"></div>
-                <div class="entry-text">Play To Earn: 47.25%</div>
+                    <div id="color-red" class="entry-color"></div>
+                    <div class="entry-text">Play To Earn: 47.25%</div>
                 </div>
                 <div class="entry">
                     <div id="color-blue" class="entry-color"></div>
@@ -579,7 +625,7 @@
                     <img src="images/partners/OIP.jpg" style="width: 170px; height: 170px; border-radius:50%;" />
                 </div>
                 <div class="partCont">
-                    <img src="images/partners/p7.jpeg"  style="width: 170px; height: 170px; border-radius:50%;" />
+                    <img src="images/partners/p3.png"  style="width: 170px; height: 170px;"/>
                 </div>
                 <div class="partCont">
                     <img src="images/partners/R.jpg"  style="width: 170px; height: 170px; border-radius:50%;"  />
@@ -598,8 +644,13 @@
                 <div class="partCont">
                     <img src="images/partners/p1.png" />
                 </div>
-                <div class="partCont">
-                    <img src="images/partners/p3.png" />
+                <div class="partCont" style="border-radius:0; background: transparent;">
+                    <img src="images/partners/p7.jpeg"  style="width: 170px; height: 170px; " />
+                </div>
+            </div>
+            <div class="row3">
+                <div class="partCont" style="border-radius:0; background: transparent;">
+                    <img src="images/partners/p9.jpeg"  style="width: 170px; height: 170px; " />
                 </div>
             </div>
         </div>
@@ -725,7 +776,12 @@
                 </a>
             </div>
             <div class="sociaIcon">
-                <a href="">
+                <a href="https://www.instagram.com/p/CVnu1QKDi_v/?utm_medium=share_sheet">
+                    <img src="images/icons/insta.jpeg" alt="icon"/>
+                </a>
+            </div>
+            <div class="sociaIcon">
+                <a href="about.html">
                     <img src="images/icons/IMG-20211206-WA0050.jpg" alt="icon"/>
                 </a>
             </div>
